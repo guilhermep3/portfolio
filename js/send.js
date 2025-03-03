@@ -46,3 +46,7 @@ function handlecheckForm(event){
 qs('.submit-btn').addEventListener('click', () => {
    qs('.form').dispatchEvent(new Event('submit', {cancelable: true}));
 })
+
+qs('.form input').forEach(input => {
+   input.addEventListener('change', handlecheckForm)
+})

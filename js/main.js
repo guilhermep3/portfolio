@@ -14,6 +14,7 @@ const modalCertificate = qs('.modal-certificate');
 const projects = qsa('.project');
 const modalProject = qs('.modal-project');
 const hamburgerMenu = qs('.hamburger-menu');
+const path = window.location.pathname;
 let isModalOpen = false;
 
 hamburgerMenu.addEventListener('click', () => {
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
          hero.style.backgroundImage = "url('src/images/hero-bg.png')";
       }
    }
+   qs('.skill-text').innerHTML = window.innerWidth > 768 ? '*Passe o mouse em cima do card*' : '*Clique no card*'
 });
 
 skills.forEach(skill => {
@@ -62,7 +64,11 @@ skills.forEach(skill => {
       skillText.textContent = currentSkillText.text;
    });
    skill.addEventListener("mouseleave", () => {
-      skillText.textContent = '*Passe o mouse em cima do card*';
+      if(window.innerWidth > 768){
+         skillText.textContent = '*Passe o mouse em cima do card*';
+      } else {
+         skillText.textContent = '*Clique no card*';
+      }
    });
 });
 
@@ -116,7 +122,8 @@ function handleOpenModalProj(proj) {
       qs('.modal-buttons i').setAttribute('onclick', `window.open('${projInfos.github}', '_blank')`);
    };
 };
-if(window.location.pathname.includes('index') || window.location.pathname.includes('projects')){
+
+if(path.includes('/') || path.includes('index') || path.includes('projects')){
    modalProject.addEventListener('click', (evt) => {
       if (evt.target === modalProject) {
          modalProject.classList.remove('showModal');
