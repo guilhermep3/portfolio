@@ -15,7 +15,7 @@
 }
 .hero-content span{
    font-size: 16px;
-   color: var(--text-secondary);
+   color: var(--text-primary);
    margin-bottom: 4px;
 }
 .hero-content h1{
@@ -144,35 +144,6 @@
 }
 
 
-.certificates-content{
-   justify-content: center;
-   align-items: center;
-}
-.certificates-div{
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   gap: 40px;
-}
-.certificate{
-   text-align: center;
-   width: 360px;
-   padding: 12px;
-   box-shadow: 0px 0px 8px var(--gray2);
-   background-color: var(--background);
-   cursor: pointer;
-   color: var(--text-primary);
-}
-.certificate:hover{
-   box-shadow: 0px 0px 12px var(--gray2);
-}
-.certificate-img{
-   width: 100%;
-}
-.certificate p{
-   font-size: 20px;
-   margin-top: 6px;
-}
 
 @media screen and (max-width: 768px){
    .about-content{
@@ -198,15 +169,5 @@
    }
    .skill img {
       width: 56px;
-   }
-   .certificates-div{
-      gap: 12px;
-   }
-   .certificate{
-      width: 155px;
-      padding: 8px;
-   }
-   .certificates-content{
-      padding: 8px;
    }
 }

@@ -9,8 +9,6 @@ const toggleBall = qs('.toggle-ball');
 const skills = qsa('.skill');
 const skillText = qs('.skill-text');
 const skillAlt = qsa('.skill img');
-const certificates = qsa('.certificate');
-const modalCertificate = qs('.modal-certificate');
 const projects = qsa('.project');
 const modalProject = qs('.modal-project');
 const hamburgerMenu = qs('.hamburger-menu');
@@ -72,30 +70,6 @@ skills.forEach(skill => {
    });
 });
 
-if (window.location.pathname.includes('index')) {
-   certificates.forEach((cert) => {
-      cert.addEventListener('click', () => {
-         handleOpenModal(cert.firstElementChild.src);
-      });
-   });
-   function handleOpenModal(certSrc) {
-      if (!isModalOpen) {
-         qs('.modal-container-certificate img').src = certSrc;
-         modalCertificate.classList.add('showModal');
-         isModalOpen = true;
-      }
-   };
-   qs('.modal-container-certificate span').addEventListener('click', () => {
-      modalCertificate.classList.remove('showModal');
-      isModalOpen = false;
-   });
-   modalCertificate.addEventListener('click', (evt) => {
-      if (evt.target === modalCertificate) {
-         modalCertificate.classList.remove('showModal');
-         isModalOpen = false;
-      }
-   });
-}
 
 projects.forEach((proj) => {
    proj.addEventListener('click', () => {
