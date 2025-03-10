@@ -11,14 +11,9 @@ const skillText = qs('.skill-text');
 const skillAlt = qsa('.skill img');
 const projects = qsa('.project');
 const modalProject = qs('.modal-project');
-const hamburgerMenu = qs('.hamburger-menu');
 const path = window.location.pathname;
 let isModalOpen = false;
 
-hamburgerMenu.addEventListener('click', () => {
-   hamburgerMenu.classList.toggle('hamburger-menu-active');
-   qs('.mobile-nav').classList.toggle('show-mobile-nav');
-})
 
 toggleBtn.addEventListener('click', () => {
    toggleBall.classList.remove('toggleBallAnimation');
@@ -70,6 +65,26 @@ skills.forEach(skill => {
    });
 });
 
+
+projects.forEach((project) => {
+   project.addEventListener('mousemove', (event) => {
+      const { top, left, width, height } = project.getBoundingClientRect();
+
+      // Calcula a posição do cursor relativa ao elemento
+      const x = event.clientX - (left + width / 2);
+      const y = event.clientY - (top + height / 2);
+
+      // Controla a intensidade da rotação
+      const xRotation = (y / height) * -30; // Movimento vertical inverte o eixo X
+      const yRotation = (x / width) * 30;  // Movimento horizontal controla o eixo Y
+
+      project.style.transform = `perspective(1000px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(1, 1, 1)`;
+
+      project.addEventListener('mouseleave', () => {
+         project.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`
+      })
+   });
+});
 
 projects.forEach((proj) => {
    proj.addEventListener('click', () => {

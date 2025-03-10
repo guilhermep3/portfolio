@@ -68,11 +68,11 @@ const ProjectsData = [
    },
    {
       id: 5,
-      name: 'Corte Clássico',
-      description: 'Corte Clássico é uma landing page para uma barbearia, focada em converter mais clientes através de seu design simples e objetivo.',
+      name: 'Afazeres',
+      description: 'Afazeres é uma aplicação de lista de tarefas desenvolvida com React e Next.js, projetada para ir além do comum ao oferecer mais personalização e organização para suas tarefas diárias.',
       technologies: ['React.Js', 'Next.Js', 'Typescript', 'Css'],
-      url: 'https://corte-classico.vercel.app/',
-      github: 'https://github.com/guilhermep3/barbearia-landing-page'
+      url: 'https://afazeres-todo.vercel.app/',
+      github: 'https://github.com/guilhermep3/todo-list'
    },
    {
       id: 6,
@@ -81,5 +81,13 @@ const ProjectsData = [
       technologies: ['HTML', 'CSS', 'Javascript'],
       url: 'https://guilhermep3.github.io/pizzaria-lapizza/',
       github: 'https://github.com/guilhermep3/pizzaria-lapizza'
+   },
+   {
+      id: 7,
+      name: 'Corte Clássico',
+      description: 'Corte Clássico é uma landing page para uma barbearia, focada em converter mais clientes através de seu design simples e objetivo.',
+      technologies: ['React.Js', 'Next.Js', 'Typescript', 'Css'],
+      url: 'https://corte-classico.vercel.app/',
+      github: 'https://github.com/guilhermep3/barbearia-landing-page'
    },
 ];
