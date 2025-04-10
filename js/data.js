@@ -37,7 +37,7 @@ const ProjectsData = [
    {
       id: 1,
       name: 'Vistats',
-      description: 'tem o objetivo de fornecer gráficos para empresas conseguirem visualizar os desempenhos de seus produtos, como quais mais vendem e dão lucro ou faturamento total.',
+      description: 'Vistats tem o objetivo de fornecer gráficos para empresas conseguirem visualizar os desempenhos de seus produtos organizados em categorias, como quais mais vendem e dão lucro ou faturamento total.',
       technologies: ['React.Js', 'Next.Js', 'Typescript', 'CSS'],
       url: 'https://vistats.vercel.app',
       github: 'https://github.com/guilhermep3/dashboard'
