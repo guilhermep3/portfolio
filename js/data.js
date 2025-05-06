@@ -60,6 +60,14 @@ const ProjectsData = [
    },
    {
       id: 4,
+      name: 'Alvenar',
+      description: 'Alvenar é um site desenvolvido para uma empresa de arquitetura, composto por três páginas principais. A homepage apresenta diversas seções com animações e um layout moderno, além de conter todas as informações sobre a empresa. A página da loja é totalmente funcional, permitindo a navegação por produtos, adição ao carrinho e salvamento de dados utilizando Zustand. Por fim, a página de contato possibilita o agendamento de uma reunião ou conversa, com validação de formulário implementada usando React Hook Form e Zod.',
+      technologies: ['React.Js', 'Next.Js', 'Typescript', 'CSS'],
+      url: 'https://alvenar.vercel.app/',
+      github: 'https://github.com/guilhermep3/alvenar-website'
+   },
+   {
+      id: 5,
       name: 'Web Cinema',
       description: 'Web Cinema é um site que simula uma plataforma de cinema, exibindo os filmes em estreia e em destaque, junto de uma ferramenta de pesquisa. O projeto também possui um simples sistema de login usando as bibliotecas react hook form e zod para o formulário.',
       technologies: ['React.Js', 'Next.Js', 'Typescript', 'CSS'],
@@ -67,7 +75,7 @@ const ProjectsData = [
       github: 'https://github.com/guilhermep3/web-cinema'
    },
    {
-      id: 5,
+      id: 6,
       name: 'LevelUP',
       description: 'LevelUP é uma landing page para uma academia, projetada para atrair clientes com informações sobre serviços, planos e contato. O projeto se destaca com um design limpo e responsivo com animações sutis.',
       technologies: ['React.Js', 'Next.Js', 'Typescript', 'CSS'],
@@ -75,7 +83,7 @@ const ProjectsData = [
       github: 'https://github.com/guilhermep3/levelup-academia'
    },
    {
-      id: 6,
+      id: 7,
       name: 'Afazeres',
       description: 'Afazeres é uma aplicação de lista de tarefas desenvolvida com React e Next.js, projetada para ir além do comum ao oferecer mais personalização e organização para suas tarefas diárias.',
       technologies: ['React.Js', 'Next.Js', 'Typescript', 'CSS'],
@@ -83,7 +91,7 @@ const ProjectsData = [
       github: 'https://github.com/guilhermep3/todo-list'
    },
    {
-      id: 7,
+      id: 8,
       name: 'LaPizza',
       description: 'LaPizza é um site de pizzaria com uma página inicial que destaca o menu e informações do estabelecimento. Construído com HTML, CSS e JavaScript, oferece um sistema de compra simples, ideal para pequenas empresas.',
       technologies: ['HTML', 'CSS', 'Javascript'],
@@ -91,7 +99,7 @@ const ProjectsData = [
       github: 'https://github.com/guilhermep3/pizzaria-lapizza'
    },
    {
-      id: 8,
+      id: 9,
       name: 'Clima Weather',
       description: 'Clima Weather é um projeto feito consumindo a api openweathermap que disponibiliza dados de cidades.',
       technologies: ['HTML', 'CSS', 'Javascript'],
@@ -99,7 +107,7 @@ const ProjectsData = [
       github: 'https://github.com/guilhermep3/clima-weather'
    },
    {
-      id: 9,
+      id: 10,
       name: 'Corte Clássico',
       description: 'Corte Clássico é uma landing page para uma barbearia, focada em converter mais clientes através de seu design simples e objetivo.',
       technologies: ['React.Js', 'Next.Js', 'Typescript', 'CSS'],

@@ -57,32 +57,11 @@ skills.forEach(skill => {
       skillText.textContent = currentSkillText.text;
    });
    skill.addEventListener("mouseleave", () => {
-      if(window.innerWidth > 768){
+      if (window.innerWidth > 768) {
          skillText.textContent = '*Passe o mouse em cima do card*';
       } else {
          skillText.textContent = '*Clique no card*';
       }
-   });
-});
-
-
-projects.forEach((project) => {
-   project.addEventListener('mousemove', (event) => {
-      const { top, left, width, height } = project.getBoundingClientRect();
-
-      // Calcula a posição do cursor relativa ao elemento
-      const x = event.clientX - (left + width / 2);
-      const y = event.clientY - (top + height / 2);
-
-      // Controla a intensidade da rotação
-      const xRotation = (y / height) * -30; // Movimento vertical inverte o eixo X
-      const yRotation = (x / width) * 30;  // Movimento horizontal controla o eixo Y
-
-      project.style.transform = `perspective(1000px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(1, 1, 1)`;
-
-      project.addEventListener('mouseleave', () => {
-         project.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`
-      })
    });
 });
 
@@ -112,7 +91,7 @@ function handleOpenModalProj(proj) {
    };
 };
 
-if(path.includes('/') || path.includes('index') || path.includes('projects')){
+if (path.includes('/') || path.includes('index') || path.includes('projects')) {
    modalProject.addEventListener('click', (evt) => {
       if (evt.target === modalProject) {
          modalProject.classList.remove('showModal');
@@ -122,7 +101,20 @@ if(path.includes('/') || path.includes('index') || path.includes('projects')){
    });
    qs('.back-btn').addEventListener('click', () => {
       modalProject.classList.remove('showModal');
-   qs('.modal-technologies').innerHTML = '';
-   isModalOpen = false;
-});
+      qs('.modal-technologies').innerHTML = '';
+      isModalOpen = false;
+   });
 }
+
+function handleCopy(e){
+   const li = e.currentTarget;
+   li.classList.add('clicked');
+   const textToCopy = li.querySelector('p').textContent;
+   navigator.clipboard.writeText(textToCopy);
+   setTimeout(() => {
+      li.classList.remove('clicked');
+   }, 2000);
+}
+
+document.querySelector('#copyEmail').addEventListener('click', handleCopy)
+document.querySelector('#copyNumber').addEventListener('click', handleCopy)
