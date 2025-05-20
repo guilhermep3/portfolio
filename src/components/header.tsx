@@ -27,7 +27,7 @@ export const Header = () => {
                   ))}
                </ul>
             </nav>
-            <ToggleTheme/>
+            <ToggleTheme />
          </div>
       </header>
    )

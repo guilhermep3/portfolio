@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>
+      <body className="relative">
         <ThemeProvider>
           <ClientLayout>
             {children}
