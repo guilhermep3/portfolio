@@ -67,7 +67,7 @@ export const projectsData: projectType[] = [
       technologies: ['React.Js', 'Next.Js', 'Typescript', 'CSS'],
       image: 'levelup.png',
       url: 'https://levelup-academia.vercel.app/',
-      github: 'https://github.com/guilhermep3/levelup-academia',
+      github: 'https://github.com/guilhermep3/levelup-website-v2',
       type: 'Website'
    },
    {
