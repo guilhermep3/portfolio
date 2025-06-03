@@ -17,10 +17,10 @@ export const Hero = () => {
                <h1 className="" data-aos="fade-up">Guilherme Pereira</h1>
                <h2 className="" data-aos="fade-up">Desenvolvedor Front-End</h2>
             </div>
-            <a href="/curriculo-guilherme-pereira.pdf"
+            <a href="/curriculo-guilherme-pereira-dev.pdf"
                data-aos="fade-down"
                className="btn uppercase"
-               download="curriculo-guilherme-pereira"
+               download="curriculo-guilherme-pereira-dev"
             >
                Download CV
             </a>

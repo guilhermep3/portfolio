@@ -30,7 +30,7 @@ const ParticlesBackground = () => {
                      mode: "push",
                   },
                   onHover: {
-                     enable: false,
+                     enable: true,
                      mode: "repulse",
                   },
                   resize: true,
@@ -40,14 +40,14 @@ const ParticlesBackground = () => {
                      quantity: 4,
                   },
                   repulse: {
-                     distance: 200,
+                     distance: 120,
                      duration: 0.4,
                   },
                },
             },
             particles: {
                color: {
-                  value: "#707070",
+                  value: "#74578f",
                },
                links: {
                   color: "#707070",
