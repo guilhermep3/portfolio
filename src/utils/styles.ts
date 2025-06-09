@@ -1,0 +1,3 @@
+export const containerStyle = 'container h-full mx-auto px-4 py-20';
+
+export const buttonStyle = 'px-6 py-3 text-lg font-semibold rounded-md transition duration-300 cursor-crosshair bg-[linear-gradient(to_right,_#7722d1,_#1613b4)]';
