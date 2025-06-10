@@ -15,6 +15,30 @@ const headerLinks = [
 export const Header = () => {
   const [isScroll, setIsScroll] = useState(false);
   const [isActive, setIsActive] = useState(false);
+  const [activeSection, setActiveSection] = useState('hero')
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.6, // 60% da seção precisa estar visível
+      }
+    )
+    const sections = document.querySelectorAll('section')
+    sections.forEach((section) => observer.observe(section))
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section))
+    }
+  }, [])
 
   useEffect(() => {
     function checkScroll() {
@@ -43,7 +67,10 @@ export const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex gap-6">
             {headerLinks.map((item) => (
-              <li key={item.href} className="linkHeader h-full text-sm font-bold text-white/70 hover:text-white transition duration-300">
+              <li key={item.href}
+                className={`linkHeader h-full text-sm font-bold hover:text-white transition duration-300
+                ${activeSection === item.href ? 'text-white active' : 'text-white/70'}`}
+              >
                 <Link href={`#${item.href}`} className="uppercase">{item.name}</Link>
               </li>
             ))}
