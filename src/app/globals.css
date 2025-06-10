@@ -30,6 +30,13 @@ body {
   font-family: "Orbitron", sans-serif;
 }
 
+.boxShadowSM{
+  box-shadow: 0px 0px 4px #c27aff;
+  transition: all 0.3s;
+}
+.boxShadowSM:hover{
+  box-shadow: 0px 0px 8px #c27aff;
+}
 .boxShadow{
   box-shadow: 0px 0px 8px #c27aff;
   transition: all 0.3s;
@@ -51,4 +58,10 @@ body {
 }
 .linkHeader:hover::after{
   width: 100%;
+}
+
+@media screen and (max-width:768px){
+  .linkHeader::after{
+    bottom: -8px;
+  }
 }
