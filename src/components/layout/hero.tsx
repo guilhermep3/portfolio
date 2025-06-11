@@ -2,15 +2,19 @@ import { buttonStyle, containerStyle } from "@/utils/styles"
 import { Button } from "../button"
 import { Github, Linkedin } from "lucide-react"
 import Link from "next/link"
+import { Divider } from "../svg/divider"
 
 export const Hero = () => {
 
   return (
-    <section id="hero"
-      className="relative h-screen w-full bg-center bg-cover"
-      style={{ backgroundImage: 'url("/hero-bg.jpg")' }}
-    >
-      <div className="absolute left-0 right-0 bottom-0 h-1/2 bg-[linear-gradient(to_bottom,_#00000000,_#000000bb)] z-0"></div>
+    <section id="hero" className="relative h-screen w-full bg-center bg-cover">
+      <div className="absolute bottom-0 w-full rotate-180 ">
+        <Divider />
+      </div>
+      <div className="absolute inset-0 h-screen w-full bg-center bg-cover"
+        style={{ backgroundImage: 'url("/hero-bg.jpg")', zIndex: -2 }}>
+      </div>
+      <div className="absolute left-0 right-0 bottom-0 h-1/2 bg-[linear-gradient(to_bottom,_#00000000,_#000000bb)] z-[-2]"></div>
       <div className="absolute top-32 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-24 md:-rotate-90
           flex justify-center items-center text-zinc-300 text-xs md:text-sm w-full md:w-fit"
       >
