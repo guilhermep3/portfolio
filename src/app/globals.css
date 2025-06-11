@@ -62,8 +62,106 @@ body {
   width: 100%;
 }
 
+.circle{
+  animation: animateCircle infinite linear 20s;
+}
+@keyframes animateCircle {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width:768px){
   .linkHeader::after{
     bottom: -8px;
   }
+}
+
+.hex-grid {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: auto;
+}
+
+.hex {
+  width: 100px;
+  height: 100px;
+  background: #8f3fe6;
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.hex-inner {
+  width: 100%;
+  height: 100%;
+  background: #373f4d;
+  clip-path: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s;
+}
+
+.hex:hover {
+  transform: scale(1.1);
+}
+.hex:hover .hex-inner {
+  background: #3b2f40;
+}
+
+/* Hexágonos posicionados */
+.hex-0 { top: 150px; left: 30px; }
+.hex-1 { top: 70px; left: 90px; }
+.hex-2 { top: 150px; left: 150px; }
+.hex-3 { top: 70px; left: 210px; }
+.hex-4 { top: 150px; left: 270px; }
+
+/* Linhas conectando os hexágonos */
+.line {
+  position: absolute;
+  height: 2px;
+  background: #00f;
+  z-index: 0;
+}
+
+/* Linhas com posicionamento e rotação */
+.line-0-1 {
+  top: 125px;
+  left: 80px;
+  width: 70px;
+  transform: rotate(-25deg);
+}
+.line-0-2 {
+  top: 200px;
+  left: 80px;
+  width: 70px;
+  transform: rotate(0deg);
+}
+.line-2-3 {
+  top: 125px;
+  left: 200px;
+  width: 70px;
+  transform: rotate(25deg);
+}
+.line-2-4 {
+  top: 200px;
+  left: 200px;
+  width: 70px;
+  transform: rotate(0deg);
 }

@@ -1,14 +1,13 @@
 import { aboutData } from "@/data/aboutData"
 import { bgGradient } from "@/utils/styles"
-import { Computer } from "lucide-react"
 
-export const AboutTop = () => {
+export const AboutContent = () => {
 
   return (
-    <div className="flex flex-col md:flex-row gap-6">
+    <div className="flex flex-col md:flex-row gap-6 z-10">
       <div className="flex-1 flex relative justify-center items-center">
         <img src="/window.png" alt="window" className="" />
-        <div className="absolute top-1/2 left-1/2 -translate-1/2 text-2xl sm:text-3xl md:text-4xl">
+        <div className="absolute top-1/2 left-1/2 -translate-1/2 text-2xl sm:text-3xl md:text-4xl text-center">
           <p>Descubra mais<br /> Sobre mim</p>
         </div>
       </div>
