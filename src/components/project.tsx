@@ -1,3 +1,4 @@
+import { useModalStore } from "@/store/modalStore";
 import { bgGradientHover, bgGradientOpaque } from "@/utils/styles"
 import { projectType } from "@/utils/types"
 import { Eye } from "lucide-react";
@@ -7,9 +8,15 @@ type props = {
   project: projectType;
 }
 export const Project = ({ project }: props) => {
+  const { setModalProject, setIsModalOpen } = useModalStore();
+
+  function handleOpenModal(id: number) {
+    setModalProject(project);
+    setIsModalOpen(true);
+  };
 
   return (
-    <div className={`${bgGradientOpaque} group p-2 md:p-4 border border-zinc-600 rounded-lg flex flex-col gap-4 
+    <div onClick={() => handleOpenModal(project.id)} className={`${bgGradientOpaque} group p-2 md:p-4 border border-zinc-600 rounded-lg flex flex-col gap-4 
       cursor-pointer hover:border-zinc-400 hover:${bgGradientHover} transition`}
     >
       <div className="relative w-full rounded-lg overflow-hidden">
@@ -26,7 +33,7 @@ export const Project = ({ project }: props) => {
       </div>
       <div className="flex flex-wrap gap-2">
         {project.technologies.map((tech => (
-          <span className="text-sm p-1 bg-zinc-800 rounded-sm">{tech}</span>
+          <span key={tech} className="text-sm p-1 bg-zinc-800 rounded-sm">{tech}</span>
         )))}
       </div>
     </div>
