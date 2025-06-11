@@ -27,7 +27,7 @@ export const Hero = () => {
           <p className="text-sm md:text-base mt-4 mb-8 max-w-xl ">Desenvolvedor Front-End: Construindo Universos Digitais, Transformando Ideias em Realidade</p>
           <Button className={`${buttonStyle}`} shadow>Download CV</Button>
         </div>
-        <div className="absolute bottom-10 right-5 flex gap-4">
+        <div className="absolute bottom-10 md:bottom-20 right-5 flex gap-4">
           <Link href={'https://www.linkedin.com/in/guilherme-pereira3/'}
             target="_blank"
             className="p-2 bg-black/50 rounded-full cursor-pointer boxShadowSM  transition duration-300"

@@ -9,7 +9,7 @@
   --primary-color: #8f3fe6;
   --primary-color-l: #9c53eb;
   --secondary-color: #3150ff;
-  --bg-card: #373f4d;
+  --bg-card: #10101b77;
 }
 
 @theme inline {
@@ -19,12 +19,26 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Electrolize", sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
 .orbitron{
   font-family: "Orbitron", sans-serif;
 }

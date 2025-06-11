@@ -89,7 +89,7 @@ export const Header = () => {
       <div className={`${isActive ? '-translate-y-0' : '-translate-y-full'} fixed md:hidden bg-black inset-0 w-full h-full z-30 transition duration-300`}>
         <div className="flex justify-center items-center h-full flex-col gap-8">
           {headerLinks.map((item) => (
-            <li key={item.href} className="linkHeader w-fit text-sm font-bold text-white/70 hover:text-white transition duration-300">
+            <li key={item.href} className="linkHeader w-fit text-sm font-bold text-white transition duration-300">
               <Link href={`#${item.href}`}
                 className="uppercase"
                 onClick={() => setIsActive(false)}
