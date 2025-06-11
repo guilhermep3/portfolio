@@ -1,4 +1,6 @@
 import { About } from "@/components/layout/about";
+import { Contacts } from "@/components/layout/contacts";
+import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/layout/hero";
 import { Projects } from "@/components/layout/projects";
 import { Technologies } from "@/components/layout/technologies";
@@ -16,6 +18,8 @@ export default function Home() {
       <Technologies />
       <Projects />
       <Modal/>
+      <Contacts/>
+      <Footer/>
     </main>
   );
 }

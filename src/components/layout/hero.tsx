@@ -30,13 +30,13 @@ export const Hero = () => {
         <div className="absolute bottom-10 md:bottom-20 right-5 flex gap-4">
           <Link href={'https://www.linkedin.com/in/guilherme-pereira3/'}
             target="_blank"
-            className="p-2 bg-black/50 rounded-full cursor-pointer boxShadowSM  transition duration-300"
+            className="p-2 bg-zinc-950 rounded-full cursor-pointer boxShadowSM  transition duration-300"
           >
             <Linkedin />
           </Link>
           <Link href={'https://github.com/guilhermep3'}
             target="_blank"
-            className="p-2 bg-black/50 rounded-full cursor-pointer boxShadowSM  transition duration-300"
+            className="p-2 bg-zinc-950 rounded-full cursor-pointer boxShadowSM  transition duration-300"
           >
             <Github />
           </Link>

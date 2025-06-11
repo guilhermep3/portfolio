@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "./button"
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
+import { buttonStyle } from "@/utils/styles"
 
 const headerLinks = [
   { name: 'Início', href: 'hero' },
@@ -58,7 +59,7 @@ export const Header = () => {
   return (
     <>
       <header className={`fixed ${isScroll ? 'top-2' : 'top-8'} left-1/2 -translate-x-1/2 z-40 w-[360px] md:w-full md:max-w-3xl lg:max-w-4xl
-        flex justify-between items-center gap-6 bg-black/50 backdrop-blur-md px-5 py-3 rounded-[40px] transition-all duration-500`}
+        flex justify-between items-center gap-6 bg-zinc-900/50 backdrop-blur-md px-5 py-3 rounded-[40px] transition-all duration-500`}
       >
         <Link href={'/'}>
           <Image src={'/logo-g.png'} alt="logo desenvolvedor front-end"
@@ -78,7 +79,7 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="flex items-center gap-2">
-          <Button className="">Contatos</Button>
+          <Link href={'#contacts'} className={buttonStyle}>Contatos</Link>
           {
             isActive
               ? <X className="w-8 h-8 cursor-pointer md:hidden" onClick={() => setIsActive(false)} />

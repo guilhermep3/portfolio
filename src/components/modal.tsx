@@ -10,7 +10,7 @@ export const Modal = () => {
   if (!isModalOpen || !modalProject) return;
 
   return (
-    <div className={`fixed inset-0 bg-black/50 z-40 flex justify-center items-center p-2 transition duration-300
+    <div className={`fixed inset-0 bg-black/70 z-40 flex justify-center items-center p-2 transition duration-300
      ${isModalOpen ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'}`}
     >
       <div className={`p-4 bg-zinc-900 rounded-xl transition duration-300 ${isModalOpen ? 'translate-y-0' : 'translate-y-full'}`}>
@@ -21,7 +21,7 @@ export const Modal = () => {
               alt={`projeto ${modalProject?.name}`}
             />
           </div>
-          <div className="flex-1 flex flex-col gap-4 modal-project-right">
+          <div className="flex-1 flex flex-col gap-4 md:pr-4">
             <h1 className="text-xl md:text-2xl font-bold">{modalProject?.name}</h1>
             <p>{modalProject?.description}</p>
             <div className="flex flex-wrap gap-2">

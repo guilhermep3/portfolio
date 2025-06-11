@@ -16,7 +16,7 @@ export const Technologies = () => {
       <div className="absolute inset-0 h-screen w-full bg-center bg-cover brightness-50"
         style={{ backgroundImage: 'url("/frame-dark.png")', zIndex: -2 }}>
       </div>
-      <div className={containerStyle + ' flex flex-col justify-center items-center w-full pt-32 pb-40'}>
+      <div className={containerStyle + ' flex flex-col justify-center items-center w-full md:pt-32 md:pb-40'}>
         <SectionName label="Tecnologias" />
         <SkillsTech/>
       </div>
