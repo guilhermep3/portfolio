@@ -1,4 +1,5 @@
 import { About } from "@/components/layout/about";
+import { ClientPage } from "@/components/layout/client-page";
 import { Contacts } from "@/components/layout/contacts";
 import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/layout/hero";
@@ -10,16 +11,18 @@ import ParticlesBackground from "@/utils/particles"
 export default function Home() {
   return (
     <main className="relative">
-      <div className="container-particles">
-        <ParticlesBackground />
-      </div>
-      <Hero />
-      <About />
-      <Technologies />
-      <Projects />
-      <Modal/>
-      <Contacts/>
-      <Footer/>
+      <ClientPage>
+        <div className="container-particles">
+          <ParticlesBackground />
+        </div>
+        <Hero />
+        <About />
+        <Technologies />
+        <Projects />
+        <Modal />
+        <Contacts />
+        <Footer />
+      </ClientPage >
     </main>
   );
 }

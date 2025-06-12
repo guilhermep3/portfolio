@@ -1,5 +1,4 @@
 import { buttonStyle, containerStyle } from "@/utils/styles"
-import { Button } from "../button"
 import { Github, Linkedin } from "lucide-react"
 import Link from "next/link"
 import { Divider } from "../svg/divider"
@@ -22,10 +21,14 @@ export const Hero = () => {
       </div>
       <div className={containerStyle + ' relative flex justify-center items-center flex-col z-10'}>
         <div className="flex justify-center items-center flex-col text-center">
-          <p className="text-base md:text-lg font-semibold">Olá, eu sou o</p>
-          <h1 className="orbitron text-5xl md:text-7xl font-extrabold">Guilherme Pereira</h1>
-          <p className="text-sm md:text-base mt-4 mb-8 max-w-xl ">Desenvolvedor Front-End: Construindo Universos Digitais, Transformando Ideias em Realidade</p>
-          <Button className={`${buttonStyle}`} shadow>Download CV</Button>
+          <p data-aos="fade-down" className="text-base md:text-lg font-semibold">Olá, eu sou o</p>
+          <h1 data-aos="zoom-in" className="orbitron text-5xl md:text-7xl font-extrabold">Guilherme Pereira</h1>
+          <p data-aos="fade-up" className="text-sm md:text-base mt-4 mb-8 max-w-xl ">Desenvolvedor Front-End: Construindo Universos Digitais, Transformando Ideias em Realidade</p>
+          <Link href={'/curriculo-guilherme-pereira-dev.pdf'}
+            download={'curriculo-guilherme-pereira-dev'}
+            className={`${buttonStyle} boxShadow`}
+            data-aos="fade-up"
+          >Download CV</Link>
         </div>
         <div className="absolute bottom-10 md:bottom-20 right-5 flex gap-4">
           <Link href={'https://www.linkedin.com/in/guilherme-pereira3/'}

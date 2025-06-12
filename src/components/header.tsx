@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "./button"
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
 import { buttonStyle } from "@/utils/styles"
@@ -16,30 +15,6 @@ const headerLinks = [
 export const Header = () => {
   const [isScroll, setIsScroll] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const [activeSection, setActiveSection] = useState('hero')
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id)
-          }
-        })
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.6, // 60% da seção precisa estar visível
-      }
-    )
-    const sections = document.querySelectorAll('section')
-    sections.forEach((section) => observer.observe(section))
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section))
-    }
-  }, [])
 
   useEffect(() => {
     function checkScroll() {
@@ -60,6 +35,7 @@ export const Header = () => {
     <>
       <header className={`fixed ${isScroll ? 'top-2' : 'top-8'} left-1/2 -translate-x-1/2 z-40 w-[360px] md:w-full md:max-w-3xl lg:max-w-4xl
         flex justify-between items-center gap-6 bg-zinc-900/50 backdrop-blur-md px-5 py-3 rounded-[40px] transition-all duration-500`}
+        data-aos="zoom-in"
       >
         <Link href={'/'}>
           <Image src={'/logo-g.png'} alt="logo desenvolvedor front-end"
@@ -70,8 +46,7 @@ export const Header = () => {
           <ul className="flex gap-6">
             {headerLinks.map((item) => (
               <li key={item.href}
-                className={`linkHeader h-full text-sm font-bold hover:text-white transition duration-300
-                ${activeSection === item.href ? 'text-white active' : 'text-white/70'}`}
+                className={`linkHeader h-full text-sm font-bold hover:text-white transition duration-300 text-white/70`}
               >
                 <Link href={`#${item.href}`} className="uppercase">{item.name}</Link>
               </li>
@@ -90,14 +65,14 @@ export const Header = () => {
       <div className={`${isActive ? '-translate-y-0' : '-translate-y-full'} fixed md:hidden bg-black inset-0 w-full h-full z-30 transition duration-300`}>
         <div className="flex justify-center items-center h-full flex-col gap-8">
           {headerLinks.map((item) => (
-            <li key={item.href} className="linkHeader w-fit text-sm font-bold text-white transition duration-300">
+            <p key={item.href} className="linkHeader w-fit text-sm font-bold text-white transition duration-300">
               <Link href={`#${item.href}`}
                 className="uppercase"
                 onClick={() => setIsActive(false)}
               >
                 {item.name}
               </Link>
-            </li>
+            </p>
           ))}
         </div>
       </div>

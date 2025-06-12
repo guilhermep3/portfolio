@@ -42,7 +42,9 @@ export const Contacts = () => {
         <SectionName label="Contatos" />
         <div className="flex justify-center sm:items-center flex-col md:flex-row gap-6 ">
           {contactsData.map((c) => (
-            <div key={c.id} className={`${bgGradient} group flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1 pr-2 rounded-2xl transition duration-300 cursor-pointer
+            <div key={c.id}
+              data-aos="zoom-in"
+              className={`${bgGradient} group flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1 pr-2 rounded-2xl transition duration-300 cursor-pointer
               hover:bg-[linear-gradient(to_right,_#15152477,_#45454e77,_#15152477)] border border-gray-500 hover:border-gray-300 `}
               onClick={() => { handleCopyText(c.text), setIdClicked(c.id) }}
             >

@@ -6,19 +6,20 @@ import { Divider } from "../svg/divider"
 export const Technologies = () => {
 
   return (
-    <section id="technologies" className="relative">
+    <section id="technologies" className="relative bg-center bg-cover bg-no-repeat"
+      style={{ backgroundImage: 'url("/frame-dark.png")' }}>
       <div className="absolute top-0 w-full">
-        <Divider/>
+        <Divider />
       </div>
-      <div className="absolute bottom-0 w-full rotate-180">
-        <Divider/>
+      <div className="absolute bottom-0 w-full rotate-180 translate-y-1/2">
+        <Divider />
       </div>
-      <div className="absolute inset-0 h-screen w-full bg-center bg-cover brightness-50"
+      {/* <div className="absolute inset-0 min-h-screen w-full bg-center bg-cover bg-no-repeat brightness-50"
         style={{ backgroundImage: 'url("/frame-dark.png")', zIndex: -2 }}>
-      </div>
-      <div className={containerStyle + ' flex flex-col justify-center items-center w-full md:pt-32 md:pb-40'}>
+      </div> */}
+      <div className={containerStyle + ' flex flex-col justify-center items-center w-full md:py-36'}>
         <SectionName label="Tecnologias" />
-        <SkillsTech/>
+        <SkillsTech />
       </div>
     </section>
   )
