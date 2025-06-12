@@ -7,7 +7,7 @@ export const AboutContent = () => {
     <div className="flex flex-col md:flex-row gap-6 z-10">
       <div className="flex-1 flex relative justify-center items-center">
         <img src="/window.png" alt="window" className="" />
-        <div className="absolute top-1/2 left-1/2 -translate-1/2 text-2xl sm:text-3xl md:text-4xl text-center">
+        <div data-aos={'zoom-in'} className="absolute top-1/2 left-1/2 -translate-1/2 text-2xl sm:text-3xl md:text-4xl text-center">
           <p>Descubra mais<br /> Sobre mim</p>
         </div>
       </div>

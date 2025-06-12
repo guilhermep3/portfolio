@@ -1,6 +1,6 @@
 "use client"
 import { skillsData } from "@/data/skills-data";
-import { bgGradient } from "@/utils/styles";
+import { bgGradient, bgGradientHover } from "@/utils/styles";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -24,7 +24,7 @@ export const SkillsTech = () => {
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 justify-items-center mx-auto">
         {skillsData.map((skill) => (
           <div key={skill.name} ref={skillRef}
-            className={bgGradient+' flex justify-center items-center w-fit p-4 md:p-6 rounded-lg border border-zinc-500 hover:border-[var(--primary-color)] cursor-crosshair transition duration-300'}
+            className={`${bgGradient} flex justify-center items-center w-fit p-4 md:p-6 rounded-lg border border-zinc-500 hover:border-[var(--primary-color)] hover:${bgGradientHover} cursor-crosshair transition duration-300`}
             data-aos={"fade-up"}
             onMouseEnter={() => {
               setCurrentText(skill.text)

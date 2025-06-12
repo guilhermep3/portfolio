@@ -1,5 +1,5 @@
 "use client"
-import { bgGradient, containerStyle } from "@/utils/styles"
+import { bgGradient, bgGradientHover, containerStyle } from "@/utils/styles"
 import { SectionName } from "../section-name"
 import { Check, Copy, Github, Linkedin, Mail, Phone } from "lucide-react"
 import Link from "next/link"
@@ -32,7 +32,7 @@ export const Contacts = () => {
   }
 
   return (
-    <section id="contacts">
+    <section id="contacts" className="pb-10">
       <div className={`${isToastOpen ? 'translate-y-0' : 'translate-y-96'} fixed bottom-5 left-1/2 -translate-x-1/2 z-40 
         flex flex-col gap-2 p-4 text-center bg-zinc-900 border border-zinc-700 rounded-md transition duration-300`}>
         <p className="font-semibold">Conteúdo copiado</p>
@@ -45,10 +45,10 @@ export const Contacts = () => {
             <div key={c.id}
               data-aos="zoom-in"
               className={`${bgGradient} group flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1 pr-2 rounded-2xl transition duration-300 cursor-pointer
-              hover:bg-[linear-gradient(to_right,_#15152477,_#45454e77,_#15152477)] border border-gray-500 hover:border-gray-300 `}
+              hover:${bgGradientHover} border border-gray-500 hover:border-gray-300 `}
               onClick={() => { handleCopyText(c.text), setIdClicked(c.id) }}
             >
-              <div className={bgGradient + ' p-2 md:p-4 -mt-[1px] rounded-md scale-[120%] group-hover:scale-[130%] transition duration-300 border border-gray-500 group-hover:border-gray-300'}>
+              <div className={`${bgGradient} p-2 md:p-4 -mt-[1px] rounded-md scale-[120%] group-hover:scale-[130%] group-hover:bg-[linear-gradient(to_right,_#151524,_#45454e,_#151524)] transition duration-300 border border-gray-500 group-hover:border-gray-300`}>
                 <c.icon className="w-5 md:w-8 h-5 md:h-8" />
               </div>
               <p className="md:text-lg">{c.text}</p>

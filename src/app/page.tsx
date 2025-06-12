@@ -1,3 +1,4 @@
+import { BackTop } from "@/components/back-top";
 import { About } from "@/components/layout/about";
 import { ClientPage } from "@/components/layout/client-page";
 import { Contacts } from "@/components/layout/contacts";
@@ -22,6 +23,7 @@ export default function Home() {
         <Modal />
         <Contacts />
         <Footer />
+        <BackTop/>
       </ClientPage >
     </main>
   );
