@@ -27,7 +27,7 @@ export const AboutContent = () => {
             {aboutData.map((item, index) => (
               <div key={index}
                 data-aos="fade-down"
-                className={`${bgGradient} p-4 flex items-center gap-2 border border-gray-500 hover:border-gray-300 rounded-lg transition duration-300`}>
+                className={`${bgGradient} p-4 flex items-center gap-2 border border-gray-500 hover:border-gray-300 rounded-lg transition-all duration-300`}>
                 {item.icon}
                 <p>{item.title}</p>
               </div>

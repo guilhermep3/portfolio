@@ -6,8 +6,8 @@ import { Divider } from "../svg/divider"
 export const Hero = () => {
 
   return (
-    <section id="hero" className="relative h-screen w-full bg-center bg-cover">
-      <div className="absolute bottom-0 w-full rotate-180 ">
+    <section id="hero" className="relative h-screen w-full bg-center bg-cover overflow-hidden">
+      <div className="absolute bottom-0 -left-1/2 translate-x-1/5 w-[150%] sm:left-0 sm:w-full sm:translate-x-0 rotate-180 ">
         <Divider />
       </div>
       <div className="absolute inset-0 h-screen w-full bg-center bg-cover"

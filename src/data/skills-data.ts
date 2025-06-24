@@ -45,4 +45,9 @@ export const skillsData: skillType[] = [
     src: 'git.png',
     text: 'Git é uma ferramenta de vercionamento de código, muito utilizado para salvar o código e histórico de alterações nele.'
   },
+  {
+    name: 'sass',
+    src: 'sass.png',
+    text: 'Sass é um pré-processador css que adiciona mais funcionalidades ao css, visando criar um código mais limpo e reutilizável.'
+  },
 ];

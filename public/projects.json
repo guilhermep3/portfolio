@@ -108,5 +108,15 @@
     "url": "https://corte-classico.vercel.app/",
     "github": "https://github.com/guilhermep3/barbearia-landing-page",
     "type": "Landing Page"
+  },
+  {
+    "id": 12,
+    "name": "Clone Chiquinho",
+    "description": "Clone do site Chiquinho Sorvetes feito para praticar meu conhecimento em sass, o projeto replica as principais páginas e animações com AOS.",
+    "technologies": ["HTML", "Sass", "Javascript"],
+    "image": "clone-chiquinho.png",
+    "url": "https://clone-chiquinho.vercel.app/",
+    "github": "https://github.com/guilhermep3/clone-chiquinho-sorvetes",
+    "type": "Website"
   }
 ]

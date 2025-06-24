@@ -14,7 +14,7 @@ const contactsData = [
   },
   {
     id: 2,
-    text: '14 998946158',
+    text: '+55 14 998946158',
     icon: Phone
   }
 ]
