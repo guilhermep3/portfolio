@@ -35,7 +35,6 @@ export const Header = () => {
     <>
       <header className={`fixed ${isScroll ? 'top-2' : 'top-8'} left-1/2 -translate-x-1/2 z-40 w-[360px] md:w-full md:max-w-3xl lg:max-w-4xl
         flex justify-between items-center gap-6 bg-zinc-900/50 backdrop-blur-md px-5 py-3 rounded-[40px] transition-all duration-500 border border-zinc-700`}
-        data-aos="zoom-in"
       >
         <Link href={'/'}>
           <Image src={'/logo-g.png'} alt="logo desenvolvedor front-end"
