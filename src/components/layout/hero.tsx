@@ -24,8 +24,8 @@ export const Hero = () => {
           <p data-aos="fade-down" className="text-base md:text-lg font-semibold">Olá, eu sou o</p>
           <h1 data-aos="zoom-in" className="orbitron text-5xl md:text-7xl font-extrabold">Guilherme Pereira</h1>
           <p data-aos="fade-up" className="text-sm md:text-base mt-4 mb-8 max-w-xl ">Desenvolvedor Front-End: Construindo Universos Digitais, Transformando Ideias em Realidade</p>
-          <Link href={'/curriculo-guilherme-pereira-dev.pdf'}
-            download={'curriculo-guilherme-pereira-dev'}
+          <Link href={'/dev-frontend-guilherme-pereira-curriculo.pdf'}
+            download={'dev-frontend-guilherme-pereira-curriculo'}
             className={`${buttonStyle} boxShadow`}
             data-aos="fade-up"
           >Download CV</Link>
