@@ -33,7 +33,11 @@ export const Project = ({ project }: props) => {
       </div>
       <div className="flex flex-wrap gap-2">
         {project.technologies.map((tech => (
-          <span key={tech} className="text-sm p-1 bg-zinc-800 rounded-sm">{tech}</span>
+          <span key={tech}
+            className="text-xs md:text-sm p-1 bg-zinc-900 rounded-sm border border-zinc-700"
+          >
+            {tech}
+          </span>
         )))}
       </div>
     </div>

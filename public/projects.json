@@ -128,5 +128,15 @@
     "url": "https://clone-chiquinho.vercel.app/",
     "github": "https://github.com/guilhermep3/clone-chiquinho-sorvetes",
     "type": "Website"
+  },
+  {
+    "id": 14,
+    "name": "Juris Power",
+    "description": "Juris Power é uma landing page de uma advocacia, feito para entender na prática como se usa a tecnologia styled components. o projeto possui um design moderno e responsivo.",
+    "technologies": ["React.Js", "Next.Js", "Typescript"],
+    "image": "juris-power.png",
+    "url": "https://juris-power.vercel.app/",
+    "github": "https://github.com/guilhermep3/juris-power-landing-page",
+    "type": "Landing Page"
   }
 ]
