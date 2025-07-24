@@ -7,7 +7,7 @@
     "image": "odontana.png",
     "url": "https://odontana.vercel.app",
     "github": "https://github.com/guilhermep3/dentista-website",
-    "type": "Website"
+    "type": ["Website"]
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "image": "alvenar.png",
     "url": "https://alvenar.vercel.app/",
     "github": "https://github.com/guilhermep3/alvenar-website",
-    "type": "Website / E-commerce"
+    "type": ["Website", "E-commerce"]
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "image": "dogsinfos.png",
     "url": "https://dogsinfos.vercel.app/",
     "github": "https://github.com/guilhermep3/alvenar-website",
-    "type": "Website / E-commerce"
+    "type": ["Website", "E-commerce"]
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "image": "web-cinema.png",
     "url": "https://web-cinema.vercel.app/",
     "github": "https://github.com/guilhermep3/web-cinema",
-    "type": "Website"
+    "type": ["Website"]
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "image": "dashboard.png",
     "url": "https://vistats.vercel.app",
     "github": "https://github.com/guilhermep3/dashboard",
-    "type": "Dashboard"
+    "type": ["Dashboard"]
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "image": "devnutri.png",
     "url": "https://devnutri.vercel.app/",
     "github": "https://github.com/guilhermep3/devnutri",
-    "type": "Website / E-commerce"
+    "type": ["Website", "E-commerce"]
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "image": "clube-do-sushi.png",
     "url": "https://clube-do-sushi.vercel.app",
     "github": "https://github.com/guilhermep3/clube-do-sushi",
-    "type": "E-commerce"
+    "type": ["E-commerce"]
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "image": "levelup.png",
     "url": "https://levelup-academia.vercel.app/",
     "github": "https://github.com/guilhermep3/levelup-website-v2",
-    "type": "Website"
+    "type": ["Website"]
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "image": "afazeres.png",
     "url": "https://afazeres-todo.vercel.app/",
     "github": "https://github.com/guilhermep3/todo-list",
-    "type": "Todo-list"
+    "type": ["Web-App"]
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "image": "la-pizza.png",
     "url": "https://guilhermep3.github.io/pizzaria-lapizza/",
     "github": "https://github.com/guilhermep3/pizzaria-lapizza",
-    "type": "E-commerce"
+    "type": ["E-commerce"]
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "image": "clima.png",
     "url": "https://guilhermep3.github.io/clima-weather/",
     "github": "https://github.com/guilhermep3/clima-weather",
-    "type": "Website"
+    "type": ["Website"]
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "image": "corte-classico.png",
     "url": "https://corte-classico.vercel.app/",
     "github": "https://github.com/guilhermep3/barbearia-landing-page",
-    "type": "Landing Page"
+    "type": ["Landing Page"]
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@
     "image": "clone-chiquinho.png",
     "url": "https://clone-chiquinho.vercel.app/",
     "github": "https://github.com/guilhermep3/clone-chiquinho-sorvetes",
-    "type": "Website"
+    "type": ["Website"]
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@
     "image": "juris-power.png",
     "url": "https://juris-power.vercel.app/",
     "github": "https://github.com/guilhermep3/juris-power-landing-page",
-    "type": "Landing Page"
+    "type": ["Landing Page"]
   },
   {
     "id": 15,
@@ -147,6 +147,6 @@
     "image": "front-social.png",
     "url": "https://front-social-gp3.vercel.app/",
     "github": "https://github.com/guilhermep3/front-social",
-    "type": "Social Media"
+    "type": ["Web-App"]
   }
 ]

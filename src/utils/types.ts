@@ -6,5 +6,5 @@ export type projectType = {
   image: string;
   url: string;
   github: string;
-  type: string;
+  type: string[];
 };

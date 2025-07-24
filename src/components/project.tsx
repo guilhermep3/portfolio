@@ -8,16 +8,17 @@ type props = {
   project: projectType;
 }
 export const Project = ({ project }: props) => {
+  if (!project) return;
   const { setModalProject, setIsModalOpen } = useModalStore();
 
-  function handleOpenModal(id: number) {
+  function handleOpenModal() {
     setModalProject(project);
     setIsModalOpen(true);
   };
 
   return (
-    <div onClick={() => handleOpenModal(project.id)} className={`${bgGradient} group p-2 md:p-4 border border-zinc-600 rounded-lg flex flex-col gap-4 
-      cursor-pointer hover:border-zinc-400 hover:${bgGradientHover} transition duration-300`}
+    <div onClick={() => handleOpenModal()} className={`${bgGradient} group p-2 md:p-4 border border-zinc-600 rounded-lg flex flex-col gap-4 
+      cursor-pointer hover:border-zinc-500 hover:${bgGradientHover} transition duration-300`}
     >
       <div className="relative w-full rounded-lg overflow-hidden">
         <Image src={`/projects/${project.image}`} alt={project.name ?? 'Portfolio desenvolvedor'}
@@ -29,7 +30,14 @@ export const Project = ({ project }: props) => {
       </div>
       <div className="flex justify-between items-center gap-2">
         <p className="text-lg md:text-xl font-bold">{project.name}</p>
-        <p className="text-sm md:text-base">{project.type}</p>
+        <div className="flex">
+          {project.type.map((i, index) => (
+            <p key={i} className="text-sm">
+              {i}
+              {index < project.type.length - 1 && <span className="mx-1">/</span>}
+            </p>
+          ))}
+        </div>
       </div>
       <div className="flex flex-wrap gap-2">
         {project.technologies.map((tech => (

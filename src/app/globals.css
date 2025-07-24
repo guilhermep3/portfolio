@@ -27,6 +27,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Montserrat", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) black;
+  overflow: auto;
 }
 body::-webkit-scrollbar {
   width: 12px;
@@ -103,4 +106,22 @@ body::-webkit-scrollbar-thumb {
 #tsparticles {
   width: 100%;
   height: 100vh;
+}
+.scrollbarCSS::-webkit-scrollbar {
+  height: 6px; /* altura da barra horizontal */
+}
+
+.scrollbarCSS::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbarCSS::-webkit-scrollbar-thumb {
+  background-color: #8f3fe6; /* roxo */
+  border-radius: 9999px;
+}
+
+/* Firefox */
+.scrollbarCSS {
+  scrollbar-color: #8f3fe6 transparent;
+  scrollbar-width: thin;
 }

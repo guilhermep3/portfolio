@@ -1,6 +1,6 @@
 import { containerStyle } from "@/utils/styles"
 import { SectionName } from "../section-name"
-import { ProjectsClient } from "./projects-client"
+import { ProjectsTabs } from "./projects-tabs"
 
 export const Projects = () => {
 
@@ -8,7 +8,7 @@ export const Projects = () => {
     <section id="projects" className=" min-h-screen">
       <div className={containerStyle}>
         <SectionName label="Projetos" />
-        <ProjectsClient />
+        <ProjectsTabs />
       </div>
     </section>
   )
