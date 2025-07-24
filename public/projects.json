@@ -138,5 +138,15 @@
     "url": "https://juris-power.vercel.app/",
     "github": "https://github.com/guilhermep3/juris-power-landing-page",
     "type": "Landing Page"
+  },
+  {
+    "id": 15,
+    "name": "Front Social",
+    "description": "Front Social é um projeto front-end que simula a interface de uma rede social, com o objetivo de praticar a organização de componentes, o consumo de dados via fetch e a construção de um layout responsivo inspirado em um design do Figma.",
+    "technologies": ["React.Js", "Next.Js", "Typescript"],
+    "image": "front-social.png",
+    "url": "https://front-social-gp3.vercel.app/",
+    "github": "https://github.com/guilhermep3/front-social",
+    "type": "Social Media"
   }
 ]

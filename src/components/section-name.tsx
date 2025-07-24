@@ -1,7 +1,7 @@
 type props = {
   label: string;
 }
-export const SectionName = ({label}: props) => {
+export const SectionName = ({ label }: props) => {
 
   return (
     <div data-aos="fade-down" className="relative text-center orbitron mt-4 mb-20">

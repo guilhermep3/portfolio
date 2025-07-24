@@ -8,7 +8,7 @@ export const Projects = () => {
     <section id="projects" className=" min-h-screen">
       <div className={containerStyle}>
         <SectionName label="Projetos" />
-        <ProjectsClient/>
+        <ProjectsClient />
       </div>
     </section>
   )

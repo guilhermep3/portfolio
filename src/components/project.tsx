@@ -1,5 +1,5 @@
 import { useModalStore } from "@/store/modalStore";
-import { bgGradient, bgGradientHover, bgGradientOpaque } from "@/utils/styles"
+import { bgGradient, bgGradientHover } from "@/utils/styles"
 import { projectType } from "@/utils/types"
 import { Eye } from "lucide-react";
 import Image from "next/image";
