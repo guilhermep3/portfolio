@@ -26,8 +26,8 @@ export const Hero = () => {
           <p data-aos="fade-up" className="text-sm md:text-base mt-4 mb-8 max-w-xl ">Desenvolvedor Front-End: Construindo Universos Digitais, Transformando Ideias em Realidade</p>
           <Link href={'/dev-frontend-guilherme-pereira-curriculo.pdf'}
             download={'dev-frontend-guilherme-pereira-curriculo'}
-            className={`${buttonStyle} boxShadow`}
             data-aos="fade-up"
+            className={`${buttonStyle} boxShadow`}
           >Download CV</Link>
         </div>
         <div className="absolute bottom-10 md:bottom-20 right-5 flex gap-4">

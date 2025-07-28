@@ -21,12 +21,12 @@
   },
   {
     "id": 3,
-    "name": "DogsInfos",
-    "description": "DogsInfos é um site que apresenta informações sobre diferentes raças de cachorros, o projeto foi feito em Next.js, React.js, Typescript e Tailwind no front-end, e o Node.js no back-end para criar a api com o deploy na Render. Atualmente é possível visualizar 30 raças com opções de filtragem e ordenação além de uma página única para visualizar dados sobre um cachorro em específico",
-    "technologies": ["Node.js", "React.Js", "Next.Js", "Typescript", "CSS"],
-    "image": "dogsinfos.png",
-    "url": "https://dogsinfos.vercel.app/",
-    "github": "https://github.com/guilhermep3/alvenar-website",
+    "name": "DevNutri",
+    "description": "DevNutri é um projeto completo que combina uma landing page com funcionalidades de e-commerce. A aplicação é multi-página, e possui um design moderno, responsivo e otimizado para boa experiência do usuário",
+    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
+    "image": "devnutri.png",
+    "url": "https://devnutri.vercel.app/",
+    "github": "https://github.com/guilhermep3/devnutri",
     "type": ["Website", "E-commerce"]
   },
   {
@@ -41,6 +41,26 @@
   },
   {
     "id": 5,
+    "name": "DogsInfos",
+    "description": "DogsInfos é um site que apresenta informações sobre diferentes raças de cachorros, o projeto foi feito em Next.js, React.js, Typescript e Tailwind no front-end, e o Node.js no back-end para criar a api com o deploy na Render. Atualmente é possível visualizar 30 raças com opções de filtragem e ordenação além de uma página única para visualizar dados sobre um cachorro em específico",
+    "technologies": ["Node.js", "React.Js", "Next.Js", "Typescript", "CSS"],
+    "image": "dogsinfos.png",
+    "url": "https://dogsinfos.vercel.app/",
+    "github": "https://github.com/guilhermep3/alvenar-website",
+    "type": ["Website"]
+  },
+  {
+    "id": 6,
+    "name": "LevelUP",
+    "description": "LevelUP é uma landing page para uma academia, projetada para atrair clientes com informações sobre serviços, planos e contato. O projeto se destaca com um design limpo e responsivo com animações sutis.",
+    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
+    "image": "levelup.png",
+    "url": "https://levelup-academia.vercel.app/",
+    "github": "https://github.com/guilhermep3/levelup-website-v2",
+    "type": ["Website"]
+  },
+  {
+    "id": 7,
     "name": "Vistats",
     "description": "Vistats tem o objetivo de fornecer gráficos para empresas conseguirem visualizar os desempenhos de seus produtos organizados em categorias, como quais mais vendem e dão lucro ou faturamento total.",
     "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
@@ -50,17 +70,7 @@
     "type": ["Dashboard"]
   },
   {
-    "id": 6,
-    "name": "DevNutri",
-    "description": "DevNutri é um projeto completo que combina uma landing page com funcionalidades de e-commerce. A aplicação é multi-página, e possui um design moderno, responsivo e otimizado para boa experiência do usuário",
-    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
-    "image": "devnutri.png",
-    "url": "https://devnutri.vercel.app/",
-    "github": "https://github.com/guilhermep3/devnutri",
-    "type": ["Website", "E-commerce"]
-  },
-  {
-    "id": 7,
+    "id": 8,
     "name": "Clube do Sushi",
     "description": "Clube do Sushi é um site de restaurante com uma página inicial de apresentação e uma seção de pedidos. Desenvolvido com a biblioteca shadcn do React, oferece uma interface simples e funcional para o menu e simular pedidos online.",
     "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
@@ -68,16 +78,6 @@
     "url": "https://clube-do-sushi.vercel.app",
     "github": "https://github.com/guilhermep3/clube-do-sushi",
     "type": ["E-commerce"]
-  },
-  {
-    "id": 8,
-    "name": "LevelUP",
-    "description": "LevelUP é uma landing page para uma academia, projetada para atrair clientes com informações sobre serviços, planos e contato. O projeto se destaca com um design limpo e responsivo com animações sutis.",
-    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
-    "image": "levelup.png",
-    "url": "https://levelup-academia.vercel.app/",
-    "github": "https://github.com/guilhermep3/levelup-website-v2",
-    "type": ["Website"]
   },
   {
     "id": 9,
@@ -91,36 +91,6 @@
   },
   {
     "id": 10,
-    "name": "LaPizza",
-    "description": "LaPizza é um site de pizzaria com uma página inicial que destaca o menu e informações do estabelecimento. Construído com HTML, CSS e JavaScript, oferece um sistema de compra simples, ideal para pequenas empresas.",
-    "technologies": ["HTML", "CSS", "Javascript"],
-    "image": "la-pizza.png",
-    "url": "https://guilhermep3.github.io/pizzaria-lapizza/",
-    "github": "https://github.com/guilhermep3/pizzaria-lapizza",
-    "type": ["E-commerce"]
-  },
-  {
-    "id": 11,
-    "name": "Clima Weather",
-    "description": "Clima Weather é um projeto feito consumindo a api openweathermap que disponibiliza dados de cidades.",
-    "technologies": ["HTML", "CSS", "Javascript"],
-    "image": "clima.png",
-    "url": "https://guilhermep3.github.io/clima-weather/",
-    "github": "https://github.com/guilhermep3/clima-weather",
-    "type": ["Website"]
-  },
-  {
-    "id": 12,
-    "name": "Corte Clássico",
-    "description": "Corte Clássico é uma landing page para uma barbearia, focada em converter mais clientes através de seu design simples e objetivo.",
-    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
-    "image": "corte-classico.png",
-    "url": "https://corte-classico.vercel.app/",
-    "github": "https://github.com/guilhermep3/barbearia-landing-page",
-    "type": ["Landing Page"]
-  },
-  {
-    "id": 13,
     "name": "Clone Chiquinho",
     "description": "Clone do site Chiquinho Sorvetes feito para praticar meu conhecimento em sass, o projeto replica as principais páginas e animações com AOS.",
     "technologies": ["HTML", "Sass", "Javascript"],
@@ -130,7 +100,7 @@
     "type": ["Website"]
   },
   {
-    "id": 14,
+    "id": 11,
     "name": "Juris Power",
     "description": "Juris Power é uma landing page de uma advocacia, feito para entender na prática como se usa a tecnologia styled components. o projeto possui um design moderno e responsivo.",
     "technologies": ["React.Js", "Next.Js", "Typescript"],
@@ -140,13 +110,43 @@
     "type": ["Landing Page"]
   },
   {
-    "id": 15,
+    "id": 12,
     "name": "Front Social",
     "description": "Front Social é um projeto front-end que simula a interface de uma rede social, com o objetivo de praticar a organização de componentes, o consumo de dados via fetch e a construção de um layout responsivo inspirado em um design do Figma.",
     "technologies": ["React.Js", "Next.Js", "Typescript"],
     "image": "front-social.png",
     "url": "https://front-social-gp3.vercel.app/",
     "github": "https://github.com/guilhermep3/front-social",
+    "type": ["Web-App"]
+  },
+  {
+    "id": 13,
+    "name": "LaPizza",
+    "description": "LaPizza é um site de pizzaria com uma página inicial que destaca o menu e informações do estabelecimento. Construído com HTML, CSS e JavaScript, oferece um sistema de compra simples, ideal para pequenas empresas.",
+    "technologies": ["HTML", "CSS", "Javascript"],
+    "image": "la-pizza.png",
+    "url": "https://guilhermep3.github.io/pizzaria-lapizza/",
+    "github": "https://github.com/guilhermep3/pizzaria-lapizza",
+    "type": ["E-commerce"]
+  },
+  {
+    "id": 14,
+    "name": "Corte Clássico",
+    "description": "Corte Clássico é uma landing page para uma barbearia, focada em converter mais clientes através de seu design simples e objetivo.",
+    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
+    "image": "corte-classico.png",
+    "url": "https://corte-classico.vercel.app/",
+    "github": "https://github.com/guilhermep3/barbearia-landing-page",
+    "type": ["Landing Page"]
+  },
+  {
+    "id": 15,
+    "name": "Clima Weather",
+    "description": "Clima Weather é um projeto feito consumindo a api openweathermap que disponibiliza dados de cidades.",
+    "technologies": ["HTML", "CSS", "Javascript"],
+    "image": "clima.png",
+    "url": "https://guilhermep3.github.io/clima-weather/",
+    "github": "https://github.com/guilhermep3/clima-weather",
     "type": ["Web-App"]
   }
 ]

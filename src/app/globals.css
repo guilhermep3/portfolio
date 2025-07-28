@@ -6,9 +6,9 @@
 :root {
   --background: #000000;
   --foreground: #ffffff;
-  --primary-color: #8f3fe6;
-  --primary-color-l: #9c53eb;
-  --secondary-color: #3150ff;
+  --primary-color: #7f33e4;
+  --primary-color-l: #8f4fe4;
+  --secondary-color: #3146ff;
   --bg-card: #10101b77;
 }
 
@@ -47,18 +47,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .boxShadowSM{
-  box-shadow: 0px 0px 4px #8f3fe6;
-  transition: all 0.3s;
+  box-shadow: 0px 0px 4px #7f33e4;
+  transition: all 0.2s;
 }
 .boxShadowSM:hover{
-  box-shadow: 0px 0px 8px #8f3fe6;
+  box-shadow: 0px 0px 8px #7f33e4;
 }
-.boxShadow{
-  box-shadow: 0px 0px 8px #8f3fe6;
-  transition: all 0.3s;
+.boxShadow {
+  box-shadow: 0px 0px 8px #7f33e4;
+  transition: box-shadow 0.3s ease-in-out;
 }
-.boxShadow:hover{
-  box-shadow: 0px 0px 32px #8f3fe6;
+.boxShadow:hover {
+  box-shadow: 0px 0px 24px #7f33e4;
 }
 .linkHeader::after{
   content: '';
@@ -116,12 +116,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .scrollbarCSS::-webkit-scrollbar-thumb {
-  background-color: #8f3fe6; /* roxo */
+  background-color: #7f33e4; /* roxo */
   border-radius: 9999px;
 }
 
 /* Firefox */
 .scrollbarCSS {
-  scrollbar-color: #8f3fe6 transparent;
+  scrollbar-color: #7f33e4 transparent;
   scrollbar-width: thin;
 }
