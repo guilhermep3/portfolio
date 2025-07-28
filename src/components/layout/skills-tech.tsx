@@ -1,24 +1,27 @@
 "use client"
 import { skillsData } from "@/data/skills-data";
-import { bgGradient, bgGradientHover } from "@/utils/styles";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export const SkillsTech = () => {
-  const isMobile = typeof window !== undefined && window.innerWidth <= 768;
-  const [defaultText, setDefaultText] = useState(isMobile ? "*Clique no card*" : "*Passe o mouse em cima do card*");
+  const [defaultText, setDefaultText] = useState("*Passe o mouse em cima do card*");
   const [currentText, setCurrentText] = useState(defaultText);
 
   useEffect(() => {
-    function handleResize() {
+    if (typeof window !== undefined) {
+      const isMobile = window.innerWidth <= 768;
       setDefaultText(isMobile ? "*Clique no card*" : "*Passe o mouse em cima do card*");
-    };
 
-    window.addEventListener('resize', handleResize);
+      function handleResize() {
+        setDefaultText(isMobile ? "*Clique no card*" : "*Passe o mouse em cima do card*");
+      };
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
 
   const skillRef = useRef<HTMLDivElement | null>(null);
