@@ -35,7 +35,7 @@ export const ProjectsTabs = () => {
   );
 
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col gap-4 w-full min-w-0">
       {projects &&
         <TabsHeader tabs={tabs}
           activeTab={activeTab} setActiveTab={setActiveTab}
