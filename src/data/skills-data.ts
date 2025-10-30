@@ -2,6 +2,7 @@ export type skillType = {
   name: string;
   src: string;
   text: string;
+  begginer?: boolean;
 };
 
 export const skillsData: skillType[] = [
@@ -49,5 +50,11 @@ export const skillsData: skillType[] = [
     name: 'sass',
     src: 'sass.png',
     text: 'Sass é um pré-processador css que adiciona mais funcionalidades ao css, visando criar um código mais limpo e reutilizável.'
+  },
+  {
+    name: 'Node.js',
+    src: 'nodejs.png',
+    text: 'Node.js é um ambiente de execução para JavaScript que permite executar o código do lado do servidor e fora de um navegador',
+    begginer: true
   },
 ];

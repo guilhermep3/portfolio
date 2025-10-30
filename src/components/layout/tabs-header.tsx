@@ -6,7 +6,7 @@ type props = {
 export const TabsHeader = ({ tabs, activeTab, setActiveTab }: props) => {
 
   return (
-    <div className="w-full overflow-x-auto px-2 pb-1">
+    <div className="flex md:justify-center md:items-center w-full overflow-x-auto px-2 pb-5">
       <div className="inline-flex gap-1">
         {tabs.map((i) => (
           <button

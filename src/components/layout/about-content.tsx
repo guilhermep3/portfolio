@@ -22,14 +22,17 @@ export const AboutContent = () => {
           <br />
         </div>
         <div className="w-full">
-          <p data-aos="zoom-in" className="text-xl md:text-2xl text-center mb-4">Principais destaques</p>
+          <div data-aos="zoom-in">
+            <p className="text-xl md:text-2xl text-center mb-4">Principais destaques</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
             {aboutData.map((item, index) => (
-              <div key={index}
-                data-aos="fade-down"
-                className={`${bgGradient} p-4 flex items-center gap-2 border border-gray-500 hover:border-gray-300 rounded-lg transition-all duration-300`}>
-                {item.icon}
-                <p>{item.title}</p>
+              <div data-aos="fade-down">
+                <div key={index}
+                  className={`${bgGradient} p-4 flex items-center gap-2 border border-gray-500 hover:border-gray-300 rounded-lg transition-all duration-300`}>
+                  {item.icon}
+                  <p>{item.title}</p>
+                </div>
               </div>
             ))}
           </div>

@@ -42,20 +42,21 @@ export const Contacts = () => {
         <SectionName label="Contatos" />
         <div className="flex justify-center sm:items-center flex-col md:flex-row gap-6 ">
           {contactsData.map((c) => (
-            <div key={c.id}
-              data-aos="zoom-in"
-              className={`${bgGradient} group flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1 pr-2 rounded-2xl transition duration-300 cursor-pointer
-              hover:${bgGradientHover} border border-gray-500 hover:border-gray-300 `}
-              onClick={() => { handleCopyText(c.text), setIdClicked(c.id) }}
-            >
-              <div className={`${bgGradient} p-2 md:p-4 -mt-[1px] rounded-md scale-[120%] group-hover:scale-[130%] group-hover:bg-[linear-gradient(to_right,_#151524,_#45454e,_#151524)] transition duration-300 border border-gray-500 group-hover:border-gray-300`}>
-                <c.icon className="w-5 md:w-8 h-5 md:h-8" />
+            <div data-aos="zoom-in" className="sm:max-w-md w-full" key={c.id}>
+              <div
+                className={`${bgGradient} group flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1 pr-2 rounded-2xl transition duration-300 cursor-pointer
+                hover:${bgGradientHover} border border-gray-500 hover:border-gray-300 `}
+                onClick={() => { handleCopyText(c.text), setIdClicked(c.id) }}
+              >
+                <div className={`${bgGradient} p-2 md:p-4 -mt-[1px] rounded-md scale-[120%] group-hover:scale-[130%] group-hover:bg-[linear-gradient(to_right,_#151524,_#45454e,_#151524)] transition duration-300 border border-gray-500 group-hover:border-gray-300`}>
+                  <c.icon className="w-5 md:w-8 h-5 md:h-8" />
+                </div>
+                <p className="md:text-lg">{c.text}</p>
+                {isToastOpen && idCicked === c.id
+                  ? <Check className="ml-auto" />
+                  : <Copy className="ml-auto" />
+                }
               </div>
-              <p className="md:text-lg">{c.text}</p>
-              {isToastOpen && idCicked === c.id
-                ? <Check className="ml-auto" />
-                : <Copy className="ml-auto" />
-              }
             </div>
           ))}
         </div>

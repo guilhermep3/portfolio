@@ -108,7 +108,7 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
 }
 .scrollbarCSS::-webkit-scrollbar {
-  height: 6px; /* altura da barra horizontal */
+  height: 6px;
 }
 
 .scrollbarCSS::-webkit-scrollbar-track {
@@ -116,7 +116,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .scrollbarCSS::-webkit-scrollbar-thumb {
-  background-color: #7f33e4; /* roxo */
+  background-color: #7f33e4;
   border-radius: 9999px;
 }
 
