@@ -7,7 +7,7 @@ export const TabsHeader = ({ tabs, activeTab, setActiveTab }: props) => {
 
   return (
     <div className="flex md:justify-center md:items-center w-full overflow-x-auto px-2 pb-5">
-      <div className="inline-flex gap-1">
+      <div className="inline-flex gap-1 border p-1 rounded-md border-[var(--primary-color)]/20">
         {tabs.map((i) => (
           <button
             key={i}

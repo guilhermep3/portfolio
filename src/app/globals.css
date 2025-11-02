@@ -19,10 +19,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 20px;
 }
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -31,36 +32,25 @@ body {
   scrollbar-color: var(--primary-color) black;
   overflow: auto;
 }
+
 body::-webkit-scrollbar {
   width: 12px;
 }
+
 body::-webkit-scrollbar-track {
   background: black;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
   border-radius: 10px;
 }
 
-.orbitron{
+.orbitron {
   font-family: "Orbitron", sans-serif;
 }
 
-.boxShadowSM{
-  box-shadow: 0px 0px 4px #7f33e4;
-  transition: all 0.2s;
-}
-.boxShadowSM:hover{
-  box-shadow: 0px 0px 8px #7f33e4;
-}
-.boxShadow {
-  box-shadow: 0px 0px 8px #7f33e4;
-  transition: box-shadow 0.3s ease-in-out;
-}
-.boxShadow:hover {
-  box-shadow: 0px 0px 24px #7f33e4;
-}
-.linkHeader::after{
+.linkHeader::after {
   content: '';
   width: 0%;
   height: 3px;
@@ -72,26 +62,31 @@ body::-webkit-scrollbar-thumb {
   display: block;
   transition: width 200ms ease-in-out;
 }
-.linkHeader:hover::after{
-  width: 100%;
-}
-.linkHeader.active::after{
+
+.linkHeader:hover::after {
   width: 100%;
 }
 
-.circle{
+.linkHeader.active::after {
+  width: 100%;
+}
+
+.circle {
   animation: animateCircle infinite linear 20s;
 }
+
 @keyframes animateCircle {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+
+  100% {
     transform: rotate(360deg);
   }
 }
-@media screen and (max-width:768px){
-  .linkHeader::after{
+
+@media screen and (max-width:768px) {
+  .linkHeader::after {
     bottom: -8px;
   }
 }
@@ -103,10 +98,12 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   z-index: -1;
 }
+
 #tsparticles {
   width: 100%;
   height: 100vh;
 }
+
 .scrollbarCSS::-webkit-scrollbar {
   height: 6px;
 }

@@ -7,15 +7,12 @@ import { Hero } from "@/components/layout/hero";
 import { Projects } from "@/components/layout/projects";
 import { Technologies } from "@/components/layout/technologies";
 import { Modal } from "@/components/modal";
-import ParticlesBackground from "@/utils/particles"
 
 export default function Home() {
+  
   return (
     <main className="relative">
       <ClientPage>
-        <div className="container-particles">
-          <ParticlesBackground />
-        </div>
         <Hero />
         <About />
         <Technologies />
@@ -23,7 +20,7 @@ export default function Home() {
         <Modal />
         <Contacts />
         <Footer />
-        <BackTop/>
+        <BackTop />
       </ClientPage >
     </main>
   );

@@ -1,3 +1,4 @@
+import { boxShadowStyle, buttonStyle } from "@/utils/styles";
 import React from "react"
 
 type props = {
@@ -8,8 +9,7 @@ type props = {
 export const Button = ({ children, className, shadow }: props) => {
 
   return (
-    <button className={`px-6 py-3 text-lg font-semibold transition duration-300 cursor-crosshair bg-[linear-gradient(to_right,_#7f33e4,_#3150ff)]
-       ${shadow && 'boxShadow'} rounded-4xl ${className && className}`}
+    <button className={`${buttonStyle} ${shadow && boxShadowStyle} ${className && className}`}
     >
       {children}
     </button>

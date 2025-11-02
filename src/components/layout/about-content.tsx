@@ -11,7 +11,7 @@ export const AboutContent = () => {
           <p>Descubra mais<br /> Sobre mim</p>
         </div>
       </div>
-      <div className="flex-1 flex flex-col justify-center items-start gap-6 z-20">
+      <div className="flex-1 flex flex-col justify-center items-start gap-8 z-20">
         <div data-aos="zoom-in" className="text-base md:text-lg text-center md:text-start text-zinc-300">
           Sou desenvolvedor front-end com grande entusiasmo por UI/UX e layouts modernos.
           Tenho um olhar atento para o design e a experiência do usuário, buscando sempre criar interfaces intuitivas,
@@ -23,13 +23,13 @@ export const AboutContent = () => {
         </div>
         <div className="w-full">
           <div data-aos="zoom-in">
-            <p className="text-xl md:text-2xl text-center mb-4">Principais destaques</p>
+            <p className="text-xl md:text-2xl text-center mb-4 font-semibold">Principais destaques</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
             {aboutData.map((item, index) => (
-              <div data-aos="fade-down">
-                <div key={index}
-                  className={`${bgGradient} p-4 flex items-center gap-2 border border-gray-500 hover:border-gray-300 rounded-lg transition-all duration-300`}>
+              <div key={index} data-aos="fade-down">
+                <div className={`${bgGradient} p-4 flex items-center gap-2 border border-gray-500 hover:border-gray-300 rounded-lg transition-all duration-300`}
+                >
                   {item.icon}
                   <p>{item.title}</p>
                 </div>
