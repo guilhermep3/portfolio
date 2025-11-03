@@ -1,5 +1,5 @@
 import { useModalStore } from "@/store/modalStore";
-import { bgGradient, bgGradientHover } from "@/utils/styles"
+import { bgGradient } from "@/utils/styles"
 import { projectType } from "@/utils/types"
 import { Eye } from "lucide-react";
 import Image from "next/image";
@@ -17,8 +17,8 @@ export const Project = ({ project }: props) => {
   };
 
   return (
-    <div onClick={() => handleOpenModal()} className={`${bgGradient} group p-2 md:p-4 border border-zinc-600 rounded-lg flex flex-col gap-4 
-      cursor-pointer hover:border-zinc-500 hover:${bgGradientHover} transition duration-300`}
+    <div onClick={() => handleOpenModal()} className={`group flex flex-col gap-4 p-2 md:p-4
+      rounded-lg cursor-pointer transition duration-300 ${bgGradient}`}
     >
       <div className="relative w-full rounded-lg overflow-hidden">
         <Image src={`/projects/${project.image}`} alt={project.name ?? 'Portfolio desenvolvedor'}

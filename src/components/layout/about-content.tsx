@@ -1,25 +1,43 @@
 import { aboutData } from "@/data/aboutData"
 import { bgGradient } from "@/utils/styles"
+import Image from "next/image"
+import Link from "next/link"
 
 export const AboutContent = () => {
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 z-10">
-      <div className="flex-1 flex relative justify-center items-center">
-        <img src="/window.png" alt="window" className="" />
-        <div data-aos={'zoom-in'} className="absolute top-1/2 left-1/2 -translate-1/2 text-2xl sm:text-3xl md:text-4xl font-bold text-center">
-          <p>Descubra mais<br /> Sobre mim</p>
+    <div className="flex flex-col lg:flex-row gap-10 z-10">
+      <div className="flex-1 flex flex-col gap-5 justify-center items-center">
+        <div data-aos={'zoom-in'} className="orbitron w-full text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide">
+          <p>Descubra mais<br className="my-1" /> Sobre mim</p>
+        </div>
+        <div data-aos="zoom-in" className="text-sm lg:text-base text-center md:text-start text-zinc-300">
+          Sou desenvolvedor front-end com foco em criação de interfaces modernas e funcionais para web, com ênfase na integração e consumo de API.
+          <br />
+          Ao desenvolver, sempre opto por soluções intuitivas e funcionais, garantino uma boa experiência de usuário (UI/UX). Além de sempre utlizar a lógica da programação e trazer total compatibilidade com o back-end.
+          Busco sempre estudar para entregar o melhor resultado possível em cada projeto, evoluindo de maneira constante.
+          <br />
+          Estou disponível para oportunidades profissionais de trabalho, para evoluir junto do time de desenvolvedores.
         </div>
       </div>
       <div className="flex-1 flex flex-col justify-center items-start gap-8 z-20">
-        <div data-aos="zoom-in" className="text-base md:text-lg text-center md:text-start text-zinc-300">
-          Sou desenvolvedor front-end com grande entusiasmo por UI/UX e layouts modernos.
-          Tenho um olhar atento para o design e a experiência do usuário, buscando sempre criar interfaces intuitivas,
-          funcionais e visualmente atraentes.
-          <br />
-          Meu foco está em "criar novos mundos" através de código e interatividade.
-          Estou em constante aprendizado, me atualizando com as melhores práticas, tecnologias e tendências do desenvolvimento web.
-          <br />
+        <div className="w-full">
+          <div data-aos="zoom-in">
+            <div className="text-xl md:text-2xl text-center mb-4 font-semibold">Estudos</div>
+          </div>
+          <div data-aos="fade-down">
+            <Link href={"https://b7web.com.br/"} target="_blank"
+              className={`${bgGradient} flex justify-between items-center gap-2 transition p-2 rounded-md`}>
+              <div className="flex gap-3 items-center">
+                <Image src="/b7web_logo.png" alt="b7web"
+                  width={40} height={40}
+                  className="w-10 h-10 rounded-md"
+                />
+                B7Web
+              </div>
+              <div>Desenvolvimento Web</div>
+            </Link>
+          </div>
         </div>
         <div className="w-full">
           <div data-aos="zoom-in">
@@ -28,7 +46,7 @@ export const AboutContent = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
             {aboutData.map((item, index) => (
               <div key={index} data-aos="fade-down">
-                <div className={`${bgGradient} p-4 flex items-center gap-2 border border-gray-500 hover:border-gray-300 rounded-lg transition-all duration-300`}
+                <div className={`${bgGradient} p-4 flex items-center gap-2 rounded-lg transition-all duration-300`}
                 >
                   {item.icon}
                   <p>{item.title}</p>

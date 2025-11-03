@@ -1,4 +1,4 @@
-import { bgGradient, bgGradientHover } from "@/utils/styles";
+import { bgGradient } from "@/utils/styles";
 import { LucideProps } from "lucide-react";
 import Link from "next/link"
 import type { ComponentType } from "react"
@@ -14,8 +14,8 @@ export const LinkIcon = ({ Icon, href }: Props) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`p-2 rounded-md border border-zinc-700 hover:border-[var(--primary-color)] transition duration-300
-        ${bgGradient} hover:${bgGradientHover}
+      className={`p-2 rounded-md transition duration-300
+        ${bgGradient}
       `}
     >
       <Icon />
