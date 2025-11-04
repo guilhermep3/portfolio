@@ -148,5 +148,15 @@
     "url": "https://guilhermep3.github.io/clima-weather/",
     "github": "https://github.com/guilhermep3/clima-weather",
     "type": ["Web-App"]
+  },
+  {
+    "id": 15,
+    "name": "Linkedin Profile",
+    "description": "Linkedin profile é um projeto que replica a pagina de perfil do linkedin, feito para praticar o consumo de API, carregamento de dados, simulando o fetch de dados com Axios. e algumas funcionalidades da plataforma.",
+    "technologies": ["React.Js", "Next.Js", "Typescript", "Axios"],
+    "image": "linkedin-profile.png",
+    "url": "https://linkedin-profile-api-consume.vercel.app/in/username",
+    "github": "https://github.com/guilhermep3/llinkedin_profile-api_consume",
+    "type": ["Web-App"]
   }
 ]

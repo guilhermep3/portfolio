@@ -23,10 +23,13 @@ export const Hero = () => {
       </div>
       <div className={containerStyle + ' relative flex justify-center items-center flex-col z-10'}>
         <div className="flex justify-center items-center flex-col gap-3 text-center">
-          <p data-aos="fade-down" className="text-base md:text-lg font-semibold">Olá, eu sou o</p>
-          <h1 data-aos="zoom-in" className="orbitron text-5xl md:text-7xl font-extrabold">Guilherme Pereira</h1>
-          <p data-aos="fade-up" className="text-sm md:text-base mt-4 mb-8 max-w-xl ">Desenvolvedor Front-End. Construindo Universos Digitais, Transformando Ideias em Realidade</p>
-          <div data-aos="fade-up">
+          <p data-aos="fade-down" data-aos-delay="2000"
+            className="text-base md:text-lg font-semibold">Olá, eu sou o</p>
+          <h1 data-aos="zoom-in" data-aos-delay="2000"
+            className="orbitron text-5xl md:text-7xl font-extrabold">Guilherme Pereira</h1>
+          <p data-aos="fade-up" data-aos-delay="2000"
+            className="text-sm md:text-base mt-4 mb-8 max-w-xl ">Desenvolvedor Front-End. Construindo Universos Digitais, Transformando Ideias em Realidade</p>
+          <div data-aos="fade-up" data-aos-delay="2000">
             <Link href={'/guilherme-pereira-dev-frontend.pdf'}
               download={'guilherme-pereira-dev-frontend'}
               className={`${buttonStyle} ${boxShadowStyle}`}
