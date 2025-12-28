@@ -71,16 +71,6 @@
   },
   {
     "id": 8,
-    "name": "Vistats",
-    "description": "Vistats tem o objetivo de fornecer gráficos para empresas conseguirem visualizar os desempenhos de seus produtos organizados em categorias, como quais mais vendem e dão lucro ou faturamento total.",
-    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
-    "image": "dashboard.png",
-    "url": "https://vistats.vercel.app",
-    "github": "https://github.com/guilhermep3/dashboard",
-    "type": ["Dashboard"]
-  },
-  {
-    "id": 9,
     "name": "Clube do Sushi",
     "description": "Clube do Sushi é um site de restaurante com uma página inicial de apresentação e uma seção de pedidos. Desenvolvido com a biblioteca shadcn do React, oferece uma interface simples e funcional para o menu e simular pedidos online.",
     "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
@@ -90,7 +80,7 @@
     "type": ["E-commerce"]
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "Afazeres",
     "description": "Afazeres é uma aplicação de lista de tarefas desenvolvida com React e Next.js, projetada para ir além do comum ao oferecer mais personalização e organização para suas tarefas diárias.",
     "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
@@ -100,7 +90,7 @@
     "type": ["Web-App"]
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "Clone Chiquinho",
     "description": "Clone do site Chiquinho Sorvetes feito para praticar meu conhecimento em sass, o projeto replica as principais páginas e animações com AOS.",
     "technologies": ["HTML", "Sass", "Javascript"],
@@ -110,7 +100,7 @@
     "type": ["Website"]
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "Juris Power",
     "description": "Juris Power é uma landing page de uma advocacia, feito para entender na prática como se usa a tecnologia styled components. o projeto possui um design moderno e responsivo.",
     "technologies": ["React.Js", "Next.Js", "Typescript"],
@@ -120,7 +110,7 @@
     "type": ["Landing Page"]
   },
   {
-    "id": 13,
+    "id": 12,
     "name": "Front Social",
     "description": "Front Social é um projeto front-end que simula a interface de uma rede social, com o objetivo de praticar a organização de componentes, o consumo de dados via fetch e a construção de um layout responsivo inspirado em um design do Figma.",
     "technologies": ["React.Js", "Next.Js", "Typescript"],
@@ -130,7 +120,7 @@
     "type": ["Web-App"]
   },
   {
-    "id": 14,
+    "id": 13,
     "name": "LaPizza",
     "description": "LaPizza é um site de pizzaria com uma página inicial que destaca o menu e informações do estabelecimento. Construído com HTML, CSS e JavaScript, oferece um sistema de compra simples, ideal para pequenas empresas.",
     "technologies": ["HTML", "CSS", "Javascript"],
@@ -140,7 +130,7 @@
     "type": ["E-commerce"]
   },
   {
-    "id": 15,
+    "id": 14,
     "name": "Corte Clássico",
     "description": "Corte Clássico é uma landing page para uma barbearia, focada em converter mais clientes através de seu design simples e objetivo.",
     "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
@@ -150,7 +140,7 @@
     "type": ["Landing Page"]
   },
   {
-    "id": 16,
+    "id": 15,
     "name": "Clima Weather",
     "description": "Clima Weather é um projeto feito consumindo a api openweathermap que disponibiliza dados de cidades.",
     "technologies": ["HTML", "CSS", "Javascript"],
@@ -160,7 +150,7 @@
     "type": ["Web-App"]
   },
   {
-    "id": 17,
+    "id": 16,
     "name": "Linkedin Profile",
     "description": "Linkedin profile é um projeto que replica a pagina de perfil do linkedin, feito para praticar o consumo de API, carregamento de dados, simulando o fetch de dados com Axios. e algumas funcionalidades da plataforma.",
     "technologies": ["React.Js", "Next.Js", "Typescript", "Axios"],
