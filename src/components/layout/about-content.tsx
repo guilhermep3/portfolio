@@ -1,5 +1,4 @@
 import { aboutData } from "@/data/about-data"
-import { bgGradient } from "@/utils/styles"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -27,7 +26,7 @@ export const AboutContent = () => {
           </div>
           <div data-aos="fade-down">
             <Link href={"https://b7web.com.br/"} target="_blank"
-              className={`${bgGradient} flex justify-between items-center gap-2 transition p-2 rounded-md`}>
+              className="bgGradient flex justify-between items-center gap-2 transition p-2 rounded-md">
               <div className="flex gap-3 items-center">
                 <Image src="/b7web_logo.png" alt="b7web"
                   width={40} height={40}
@@ -46,8 +45,7 @@ export const AboutContent = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
             {aboutData.map((item, index) => (
               <div key={index} data-aos="fade-down">
-                <div className={`${bgGradient} p-4 flex items-center gap-2 rounded-lg transition-all duration-300`}
-                >
+                <div className="bgGradient p-4 flex items-center gap-2 rounded-lg transition-all duration-300">
                   {item.icon}
                   <p>{item.title}</p>
                 </div>

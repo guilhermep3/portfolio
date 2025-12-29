@@ -14,9 +14,7 @@ export const LinkIcon = ({ Icon, href }: Props) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`p-2 rounded-md transition duration-300
-        ${bgGradient}
-      `}
+      className={`p-2 rounded-md transition duration-300 bgGradient-noOpacity`}
     >
       <Icon />
     </Link>

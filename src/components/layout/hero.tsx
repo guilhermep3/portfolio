@@ -1,8 +1,6 @@
-import { boxShadowStyle, buttonStyle, containerStyle } from "@/utils/styles"
 import { Github, Linkedin } from "lucide-react"
 import Link from "next/link"
 import { Divider } from "../svg/divider"
-import { Button } from "../button"
 import { LinkIcon } from "../link-icon"
 
 export const Hero = () => {
@@ -21,7 +19,7 @@ export const Hero = () => {
       >
         <p>GP3</p><span className="w-2 md:w-3 h-2 md:h-3 bg-zinc-300 rounded-full mx-4"></span><p>Desenvolvedor Front-end</p>
       </div>
-      <div className={containerStyle + ' relative flex justify-center items-center flex-col z-10'}>
+      <div className="containerStyle relative flex justify-center items-center flex-col z-10">
         <div className="flex justify-center items-center flex-col gap-3 text-center">
           <p data-aos="fade-down" data-aos-delay="2000"
             className="text-base md:text-lg font-semibold">Olá, eu sou o</p>
@@ -32,7 +30,7 @@ export const Hero = () => {
           <div data-aos="fade-up" data-aos-delay="2000">
             <Link href={'/guilherme-pereira-dev-frontend.pdf'}
               download={'guilherme-pereira-dev-frontend'}
-              className={`${buttonStyle} ${boxShadowStyle}`}
+              className="buttonStyle boxShadowStyle"
             >Download CV</Link>
           </div>
         </div>

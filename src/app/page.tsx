@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <main className="relative">
-      {loading && <Loading fadeOut={fadeOut}/>}
+      {loading && <Loading fadeOut={fadeOut} />}
       <ClientPage>
         <Hero />
         <About />

@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export const SkillsTech = () => {
   return (
-    <div className="flex flex-col gap-14 w-full max-w-3xl -mt-10">
+    <div className="flex flex-col gap-14 w-full max-w-3xl">
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 justify-items-center mx-auto">
         {skillsData.map((skill) => (
           <div key={skill.name} data-aos="fade-up" className="group relative">
             <div
               className="relative flex justify-center items-center p-3 rounded-2xl
-              bg-white/10 backdrop-blur-md border border-zinc-500/50 shadow-lg overflow-hidden cursor-pointer
+              bg-black/20 backdrop-blur-md border border-zinc-500/50 shadow-lg overflow-hidden cursor-pointer
               transition-all duration-300 group-hover:scale-105 group-hover:shadow-indigo-500/30"
             >
               <Image src={`/technologies/${skill.src}`} alt={skill.name}

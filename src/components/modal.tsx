@@ -1,6 +1,5 @@
 "use client"
 import { useModalStore } from "@/store/modalStore";
-import { buttonStyle } from "@/utils/styles";
 import { Github } from "lucide-react";
 import Link from "next/link";
 
@@ -33,7 +32,7 @@ export const Modal = () => {
               <div className="flex items-center gap-4">
                 <Link href={modalProject?.url!}
                   target="_blank"
-                  className={buttonStyle}
+                  className="buttonStyle"
                 >
                   Acessar
                 </Link>

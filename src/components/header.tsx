@@ -3,7 +3,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
-import { buttonStyle } from "@/utils/styles"
 
 const headerLinks = [
   { name: 'Início', href: 'hero' },
@@ -54,7 +53,7 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="flex items-center gap-2">
-          <Link href={'#contacts'} className={buttonStyle}>Contatos</Link>
+          <Link href={'#contacts'} className="buttonStyle">Contatos</Link>
           {
             isActive
               ? <X className="w-8 h-8 cursor-pointer md:hidden" onClick={() => setIsActive(false)} />
