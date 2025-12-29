@@ -9,6 +9,7 @@ const headerLinks = [
   { name: 'Início', href: 'hero' },
   { name: 'Sobre', href: 'about' },
   { name: 'Tecnologias', href: 'technologies' },
+  { name: 'Bibliotecas', href: 'libraries' },
   { name: 'Projetos', href: 'projects' },
 ]
 
@@ -33,7 +34,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className={`fixed ${isScroll ? 'top-2' : 'top-8'} left-1/2 -translate-x-1/2 z-40 w-[360px] md:w-full md:max-w-3xl lg:max-w-4xl
+      <header className={`fixed ${isScroll ? 'top-2' : 'top-8'} left-1/2 -translate-x-1/2 z-40 w-[360px] md:w-full md:max-w-3xl lg:max-w-5xl
         flex justify-between items-center gap-6 bg-zinc-900/50 backdrop-blur-md px-5 py-3 rounded-[40px] transition-all duration-500 border border-zinc-700`}
       >
         <Link href={'/'}>
@@ -45,7 +46,7 @@ export const Header = () => {
           <ul className="flex gap-6">
             {headerLinks.map((item) => (
               <li key={item.href}
-                className={`linkHeader h-full text-sm font-bold hover:text-white transition duration-300 text-white/80`}
+                className={`linkHeader h-full text-xs lg:text-sm font-bold hover:text-white transition duration-300 text-white/80`}
               >
                 <Link href={`#${item.href}`} className="uppercase">{item.name}</Link>
               </li>

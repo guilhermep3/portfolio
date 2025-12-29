@@ -2,14 +2,12 @@ import { containerStyle } from "@/utils/styles"
 import { SectionName } from "../section-name"
 import { Divider } from "../svg/divider"
 import { LibrariesGrid } from "./libraries-grid"
+import { DottedBg } from "../svg/dotted-bg"
 
 export const Libraries = () => {
   return (
-    <section
-      id="libraries"
-      className="relative bg-center bg-cover bg-no-repeat"
-      style={{ backgroundImage: 'url("/wavy_background.jpg")' }}
-    >
+    <section id="libraries" className="relative bg-center bg-cover bg-no-repeat">
+      <DottedBg />
       <div className="absolute top-0 w-full">
         <Divider />
       </div>

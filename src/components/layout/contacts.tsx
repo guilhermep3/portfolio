@@ -5,6 +5,7 @@ import { Check, Copy, Github, Linkedin, Mail, Phone } from "lucide-react"
 import { useToastStore } from "@/store/toastStore"
 import { useState } from "react"
 import { LinkIcon } from "../link-icon"
+import { DottedBg } from "../svg/dotted-bg"
 
 const contactsData = [
   {
@@ -32,7 +33,8 @@ export const Contacts = () => {
   }
 
   return (
-    <section id="contacts" className="pb-10">
+    <section id="contacts" className="relative pb-10">
+      <DottedBg />
       <div className={`${isToastOpen ? 'translate-y-0' : 'translate-y-96'} fixed bottom-5 left-1/2 -translate-x-1/2 z-40 
         flex flex-col gap-2 p-4 text-center bg-zinc-900 border border-zinc-700 rounded-md transition duration-300`}>
         <p className="font-semibold">Conteúdo copiado</p>
