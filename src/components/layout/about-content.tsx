@@ -11,12 +11,16 @@ export const AboutContent = () => {
           <p>Descubra mais<br className="my-1" /> Sobre mim</p>
         </div>
         <div data-aos="zoom-in" className="text-sm lg:text-base text-center md:text-start text-zinc-300">
-          Sou desenvolvedor front-end com foco em criação de interfaces modernas e funcionais para web, com ênfase na integração e consumo de API.
-          <br />
-          Ao desenvolver, sempre opto por soluções intuitivas e funcionais, garantino uma boa experiência de usuário (UI/UX). Além de sempre utlizar a lógica da programação e trazer total compatibilidade com o back-end.
-          Busco sempre estudar para entregar o melhor resultado possível em cada projeto, evoluindo de maneira constante.
-          <br />
-          Estou disponível para oportunidades profissionais de trabalho, para evoluir junto do time de desenvolvedores.
+          <p>
+            Sou desenvolvedor front-end com foco em criação de interfaces modernas e funcionais para web, com ênfase na integração e consumo de API.
+          </p>
+          <p>
+            Ao desenvolver, sempre opto por soluções intuitivas e funcionais, garantino uma boa experiência de usuário (UI/UX). Além de sempre utlizar a lógica da programação e trazer total compatibilidade com o back-end.
+            Busco sempre estudar para entregar o melhor resultado possível em cada projeto, evoluindo de maneira constante.
+          </p>
+          <p>
+            Estou disponível para oportunidades profissionais de trabalho, para evoluir junto do time de desenvolvedores.
+          </p>
         </div>
       </div>
       <div className="flex-1 flex flex-col justify-center items-start gap-8 z-20">
