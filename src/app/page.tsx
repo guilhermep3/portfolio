@@ -5,6 +5,7 @@ import { ClientPage } from "@/components/layout/client-page";
 import { Contacts } from "@/components/layout/contacts";
 import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/layout/hero";
+import { Libraries } from "@/components/layout/libraries";
 import { Loading } from "@/components/layout/loading";
 import { Projects } from "@/components/layout/projects";
 import { Technologies } from "@/components/layout/technologies";
@@ -31,6 +32,7 @@ export default function Home() {
         <Hero />
         <About />
         <Technologies />
+        <Libraries />
         <Projects />
         <Modal />
         <Contacts />

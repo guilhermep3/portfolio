@@ -3,7 +3,7 @@
     "id": 1,
     "name": "DevOrganiza",
     "description": "DevOrganiza organizar e facilita os estudos dos desenvolvedores, tornando mais visível as suas metas e encurtando o tempo de alcançá-las.",
-    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS", "Node.js", "PostgresSQL"],
+    "technologies": ["React.Js", "Next.Js", "Typescript", "CSS", "Node.js", "PostgreSQL"],
     "image": "devorganiza.png",
     "url": "https://devorganiza.vercel.app",
     "github": "https://github.com/guilhermep3/devorganiza-frontend",

@@ -1,4 +1,4 @@
-import { aboutData } from "@/data/aboutData"
+import { aboutData } from "@/data/about-data"
 import { bgGradient } from "@/utils/styles"
 import Image from "next/image"
 import Link from "next/link"
