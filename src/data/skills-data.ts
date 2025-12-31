@@ -69,13 +69,13 @@ export const skillsData: skillType[] = [
   {
     name: 'PostgreSQL',
     src: 'postgresql.svg',
-    description: 'JavaScript no servidor',
+    description: 'Banco de dados relacional',
     begginer: true
   },
   {
     name: 'mySQL',
     src: 'mysql.svg',
-    description: 'JavaScript no servidor',
+    description: 'Banco de dados relacional',
     begginer: true
   },
 ];
