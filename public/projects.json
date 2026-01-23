@@ -141,12 +141,12 @@
   },
   {
     "id": 15,
-    "name": "Clima Weather",
-    "description": "Clima Weather é um projeto feito consumindo a api openweathermap que disponibiliza dados de cidades.",
+    "name": "Clima Cidade",
+    "description": "Clima Cidade é um projeto feito consumindo a api openweathermap com fetch e try catch, e que disponibiliza dados sobre o clima de cidades. Feito com um design moderno, responsivo, e com um background dinâmico com Javascript.",
     "technologies": ["HTML", "CSS", "Javascript"],
-    "image": "clima.png",
-    "url": "https://guilhermep3.github.io/clima-weather/",
-    "github": "https://github.com/guilhermep3/clima-weather",
+    "image": "clima-cidade.png",
+    "url": "https://guilhermep3.github.io/clima-cidade/",
+    "github": "https://github.com/guilhermep3/clima-cidade",
     "type": ["Web-App"]
   },
   {
