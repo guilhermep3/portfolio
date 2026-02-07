@@ -2,7 +2,7 @@ export type skillType = {
   name: string;
   src: string;
   description: string;
-  begginer: boolean;
+  intermediate: boolean;
 };
 
 export const skillsData: skillType[] = [
@@ -10,72 +10,72 @@ export const skillsData: skillType[] = [
     name: 'HTML',
     src: 'html5.svg',
     description: 'Linguagem de marcação',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'CSS',
     src: 'css.svg',
     description: 'Estilização de páginas web',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'React',
     src: 'react.svg',
     description: 'Biblioteca para interfaces',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'Nextjs',
     src: 'nextjs.svg',
     description: 'Framework React',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'Javascript',
     src: 'javascript.svg',
     description: 'Linguagem de programação web',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'Typescript',
     src: 'typescript.svg',
     description: 'JavaScript com tipagem',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'Tailwind',
     src: 'tailwindcss.svg',
     description: 'Framework CSS utilitário',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'Git',
     src: 'git.svg',
     description: 'Controle de versão',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'Sass',
     src: 'sass.svg',
     description: 'Pré-processador CSS',
-    begginer: false
+    intermediate: false
   },
   {
     name: 'Node.js',
     src: 'nodejs.svg',
     description: 'JavaScript no servidor',
-    begginer: true
+    intermediate: true
   },
   {
     name: 'PostgreSQL',
     src: 'postgresql.svg',
     description: 'Banco de dados relacional',
-    begginer: true
+    intermediate: true
   },
   {
     name: 'mySQL',
     src: 'mysql.svg',
     description: 'Banco de dados relacional',
-    begginer: true
+    intermediate: true
   },
 ];

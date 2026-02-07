@@ -23,9 +23,9 @@ export const SkillsTech = () => {
               >
                 {skill.description}
               </div>
-              {skill.begginer && (
+              {skill.intermediate && (
                 <span className="absolute top-1 right-1 bg-red-500/90 text-[10px] px-2 py-0.5 rounded-full text-white">
-                  Iniciante
+                  Médio
                 </span>
               )}
             </div>
