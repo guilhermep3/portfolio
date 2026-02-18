@@ -1,3 +1,9 @@
+export type LibraryType = {
+  name: string;
+  description: string;
+  tags: string[]
+}
+
 export const librariesData = [
   {
     name: "Zod",
