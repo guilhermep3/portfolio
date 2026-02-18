@@ -26,6 +26,11 @@ export const librariesData = [
     tags: ["HTTP", "API", "Frontend"],
   },
   {
+    name: "Tanstack Query",
+    description: "Gerenciamento e cache de dados assíncronos.",
+    tags: ["HTTP", "API", "Frontend"],
+  },
+  {
     name: "Prisma ORM",
     description: "ORM moderno para bancos de dados em Node.js.",
     tags: ["ORM", "Database", "SQL", "Backend"],

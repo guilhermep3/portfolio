@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 @import "tailwindcss";
 
@@ -71,8 +71,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-.orbitron {
-  font-family: "Orbitron", sans-serif;
+.righteous {
+  font-family: "Righteous", sans-serif; 
+  letter-spacing: 2px;
 }
 
 .linkHeader::after {

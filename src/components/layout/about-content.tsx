@@ -7,7 +7,7 @@ export const AboutContent = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-10 z-10">
       <div className="flex-1 flex flex-col gap-5 justify-center items-center">
-        <div data-aos={'zoom-in'} className="orbitron w-full text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide">
+        <div data-aos={'zoom-in'} className="righteous w-full text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide">
           <p>Descubra mais<br className="my-1" /> Sobre mim</p>
         </div>
         <div data-aos="zoom-in" className="text-sm lg:text-base text-center md:text-start text-zinc-300">
@@ -30,7 +30,7 @@ export const AboutContent = () => {
           </div>
           <div data-aos="fade-down">
             <Link href={"https://b7web.com.br/"} target="_blank"
-              className="bgGradient flex justify-between items-center gap-2 transition p-2 rounded-md">
+              className="bgGradient flex justify-between items-center gap-2 transition p-3 rounded-md">
               <div className="flex gap-3 items-center">
                 <Image src="/b7web_logo.png" alt="b7web"
                   width={40} height={40}
