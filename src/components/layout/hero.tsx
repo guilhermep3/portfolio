@@ -15,18 +15,27 @@ export const Hero = () => {
       </div>
       <div className="absolute left-0 right-0 bottom-0 h-1/2 bg-[linear-gradient(to_bottom,_#00000000,_#000000bb)] z-[-2]"></div>
       <div className="absolute top-32 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-24 md:-rotate-90
-          flex justify-center items-center text-zinc-300 text-xs md:text-sm w-full md:w-fit"
+        flex justify-center items-center text-zinc-300 text-xs md:text-sm w-full md:w-fit"
       >
         <p>GP3</p><span className="w-2 md:w-3 h-2 md:h-3 bg-zinc-300 rounded-full mx-4"></span><p>Desenvolvedor Front-end</p>
       </div>
       <div className="containerStyle relative flex justify-center items-center flex-col z-10">
         <div className="flex justify-center items-center flex-col gap-3 text-center">
           <p data-aos="fade-down" data-aos-delay="2000"
-            className="text-base md:text-lg font-semibold">Olá, eu sou o</p>
+            className="text-base md:text-lg font-semibold"
+          >
+            Olá, eu sou o
+          </p>
           <h1 data-aos="zoom-in" data-aos-delay="2000"
-            className="righteous text-5xl md:text-8xl font-extrabold">Guilherme Pereira</h1>
+            className="righteous text-5xl md:text-8xl font-extrabold text-transparent bg-linear-to-r from-indigo-50 to-indigo-200 bg-clip-text"
+          >
+            Guilherme Pereira
+          </h1>
           <p data-aos="fade-up" data-aos-delay="2000"
-            className="text-sm md:text-base mt-4 mb-8 max-w-xl ">Desenvolvedor Front-End. Construindo Universos Digitais, Transformando Ideias em Realidade</p>
+            className="text-sm md:text-base mt-4 mb-8 max-w-xl"
+          >
+            Desenvolvedor Front-End. Construindo Universos Digitais, Transformando Ideias em Realidade
+          </p>
           <div data-aos="fade-up" data-aos-delay="2000">
             <Link href={'/curriculo-guilherme-pereira-dev.pdf'}
               download={'curriculo-guilherme-pereira-dev'}
