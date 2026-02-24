@@ -10,16 +10,22 @@ export const AboutContent = () => {
         <div data-aos={'zoom-in'} className="righteous w-full text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide">
           <p>Descubra mais<br className="my-1" /> Sobre mim</p>
         </div>
-        <div data-aos="zoom-in" className="text-sm lg:text-base text-center md:text-start text-zinc-300">
+        <div data-aos="zoom-in" className="text-sm lg:text-base text-center md:text-start text-zinc-200">
           <p>
-            Sou desenvolvedor front-end com foco em criação de interfaces modernas e funcionais para web, com ênfase na integração e consumo de API.
+            Sou desenvolvedor front-end em evolução para fullstack, com foco em Next.js e TypeScript,
+            criando interfaces modernas, responsivas e orientadas à melhor experiência do usuário.
           </p>
           <p>
-            Ao desenvolver, sempre opto por soluções intuitivas e funcionais, garantino uma boa experiência de usuário (UI/UX). Além de sempre utlizar a lógica da programação e trazer total compatibilidade com o back-end.
-            Busco sempre estudar para entregar o melhor resultado possível em cada projeto, evoluindo de maneira constante.
+            Desenvolvo aplicações com código limpo, soluções intuitivas e integração eficiente com APIs,
+            garantindo organização, performance e compatibilidade com o back-end.
           </p>
           <p>
-            Estou disponível para oportunidades profissionais de trabalho, para evoluir junto do time de desenvolvedores.
+            Atualmente, estou expandindo meus conhecimentos para o back-end, estudando Node.js, SQL
+            e conceitos de APIs e autenticação.
+          </p>
+          <p>
+            Estou em constante aprendizado, ampliando meus conhecimentos em back-end e evoluindo
+            como desenvolvedor.
           </p>
         </div>
       </div>
