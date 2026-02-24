@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Guilherme Pereira
 
-## Getting Started
+Este é o meu portfólio pessoal, desenvolvido para apresentar meus projetos, habilidades e evolução como desenvolvedor.
 
-First, run the development server:
+Sou desenvolvedor web front-end em evolução para fullstack, com foco em Next.js e Typescript para desenvolver interfaces modernas e responsivas. Busco sempre aplicar boas práticas de desenvolvimento, código limpo e uma experiência de usuário clara e intuitiva.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Principais projetos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. ### DevOrganiza
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Anotações de estudos para desenvolvedores, com quizzes desbloqueáveis a depender dos estudos adicionados.
+Feito com Next.js, Node.js, Typescript, Drizzle ORM e PostgreSQL
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Cadastro e login de usuários
+- Upload de imagem de perfil (Cloudinary)
+- Autenticação com JWT armazenado em cookies HTTP-only
+- Organização de estudos por temas, com criação de tarefas vinculadas
+- Sistema de quizzes desbloqueáveis conforme os estudos cadastrados
+- Dashboard com visualização de desempenho através de gráficos
 
-## Learn More
+2. ### Odontana
 
-To learn more about Next.js, take a look at the following resources:
+Site para clínica odontológica com design moderno, animações e formulário. Feito para unir as principais práticas de front-end, componentes, responsividade, formulários, multi-páginas.
+Feito com Next.js, Typescript, CSS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Interface responsiva e funcional.
+- Formulário de agenda com Zod e React Hook Form
+- Interação entre páginas por query
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. ### Alvenar
 
-## Deploy on Vercel
+Site para empresa de arquitetura, com um design moderno e minimalista, e uma página de loja / venda de produtos, com filtros por categoria e preço.
+Feito com Next.js, Typescript, TailwindCSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Interface responsiva e funcional.
+- Loja com carrinho e filtragem de produtos.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-----
+
+Desenvolvido por <a href="https://github.com/guilhermep3">Guilherme Pereira</a>
