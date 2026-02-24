@@ -4,12 +4,12 @@ Este é o meu portfólio pessoal, desenvolvido para apresentar meus projetos, ha
 
 Sou desenvolvedor web front-end em evolução para fullstack, com foco em Next.js e Typescript para desenvolver interfaces modernas e responsivas. Busco sempre aplicar boas práticas de desenvolvimento, código limpo e uma experiência de usuário clara e intuitiva.
 
-## Principais projetos
+## 🔨 Principais projetos
 
-1. ### DevOrganiza
+### DevOrganiza
+Aplicação web voltada para organização de estudos para desenvolvedores, incluindo sistema de progresso e quizzes desbloqueáveis conforme o avanço dos estudos.
 
-Anotações de estudos para desenvolvedores, com quizzes desbloqueáveis a depender dos estudos adicionados.
-Feito com Next.js, Node.js, Typescript, Drizzle ORM e PostgreSQL
+**Tecnologias**: Next.js, Node.js, TypeScript, Drizzle ORM, PostgreSQL
 
 - Cadastro e login de usuários
 - Upload de imagem de perfil (Cloudinary)
@@ -18,23 +18,26 @@ Feito com Next.js, Node.js, Typescript, Drizzle ORM e PostgreSQL
 - Sistema de quizzes desbloqueáveis conforme os estudos cadastrados
 - Dashboard com visualização de desempenho através de gráficos
 
-2. ### Odontana
+### Odontana
+Website institucional para clínica odontológica, com design moderno, animações e formulário funcional, focado na aplicação de boas práticas de front-end, componentização e responsividade.
 
-Site para clínica odontológica com design moderno, animações e formulário. Feito para unir as principais práticas de front-end, componentes, responsividade, formulários, multi-páginas.
-Feito com Next.js, Typescript, CSS.
+**Tecnologias**: Next.js, TypeScript, CSS
 
-- Interface responsiva e funcional.
-- Formulário de agenda com Zod e React Hook Form
-- Interação entre páginas por query
+- Interface responsiva e moderna
+- Formulário de agendamento com validação usando Zod e React Hook Form
+- Interação entre páginas utilizando query parameters
 
-3. ### Alvenar
+### Alvenar
+Website para empresa de arquitetura com design moderno e minimalista, incluindo uma página de loja com sistema de filtragem de produtos.
 
-Site para empresa de arquitetura, com um design moderno e minimalista, e uma página de loja / venda de produtos, com filtros por categoria e preço.
-Feito com Next.js, Typescript, TailwindCSS
+**Tecnologias**: Next.js, TypeScript, Tailwind CSS
 
-- Interface responsiva e funcional.
-- Loja com carrinho e filtragem de produtos.
+- Interface responsiva e funcional
+- Sistema de loja com carrinho de compras
+- Filtros de produtos por categoria e preço
 
------
+## 📈 Em constante evolução
+
+Atualmente estou expandindo meus conhecimentos em back-end com Node.js, APIs REST e autenticação, buscando evoluir para uma atuação fullstack.
 
 Desenvolvido por <a href="https://github.com/guilhermep3">Guilherme Pereira</a>
