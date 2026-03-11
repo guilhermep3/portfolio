@@ -12,7 +12,7 @@
   {
     "id": 2,
     "name": "Odontana",
-    "description": "Odontana é um site para uma clínica odontológica que busca apresentar seus serviços no ambiente virtual. Inclui um formulário de agendamento, animações com ScrollReveal e é construído com React, oferecendo uma interface moderna e responsiva.",
+    "description": "Odontana é um site desenvolvido para uma clínica odontológica. Ele conta com um formulário de agendamento, animações com ScrollReveal e foi construído com Next.js, oferecendo uma interface moderna, rápida e responsiva.",
     "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
     "image": "odontana.png",
     "url": "https://odontana.vercel.app",
@@ -132,7 +132,7 @@
   {
     "id": 14,
     "name": "Corte Clássico",
-    "description": "Corte Clássico é uma landing page para uma barbearia, focada em converter mais clientes através de seu design simples e objetivo.",
+    "description": "Corte Clássico é uma landing page para uma barbearia, focada em converter mais clientes através de seu design simples e objetivo, feito para praticar Components, organização de pastas e estilização com CSS.",
     "technologies": ["React.Js", "Next.Js", "Typescript", "CSS"],
     "image": "corte-classico.png",
     "url": "https://corte-classico.vercel.app/",
