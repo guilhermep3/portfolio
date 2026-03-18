@@ -41,7 +41,7 @@ export const ProjectsTabs = () => {
           activeTab={activeTab} setActiveTab={setActiveTab}
         />
       }
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 min-h-80 border border-zinc-800 p-3 rounded-xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 min-h-80">
         {filteredProjects?.map((p) => (
           <Project key={p.id} project={p} />
         ))}

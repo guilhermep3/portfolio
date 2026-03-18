@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
 @import "tailwindcss";
 
 :root {
@@ -8,6 +7,7 @@
   --foreground: #ffffff;
   --primary-color: #4053ff;
   --secondary-color: #00A36C;
+  --secondary-color-bright: #14f3a9;
   --bg-card: #10101b77;
 }
 
@@ -38,7 +38,7 @@
   .bgGradient {
     @apply bg-linear-to-r from-zinc-950/50 via-zinc-900/50 to-zinc-950/50 backdrop-blur-md 
       hover:from-zinc-950/80 hover:via-zinc-900/80 hover:to-zinc-950/80 border border-zinc-700 
-        hover:border-zinc-500
+      hover:border-zinc-500
   }
   .bgGradient-noOpacity {
     @apply bg-linear-to-r from-zinc-950 via-zinc-900 to-zinc-950 backdrop-blur-md 
@@ -47,13 +47,17 @@
   }
   .boxShadowStyle {
     @apply shadow-[0px_0px_8px_#4053ff] hover:shadow-[0px_0px_24px_#4053ff] transition-shadow 
-    duration-300 ease-in-out;
+      duration-300 ease-in-out;
+  }
+  .spanStyle {
+    @apply text-xs px-2 py-1 rounded-full text-[var(--secondary-color-bright)] bg-[var(--primary-color)]/20
+      border border-[var(--primary-color)]/40 hover:border-[var(--secondary-color)]/50
+      transition-all duration-200
   }
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 20px;
 }
 
 body {

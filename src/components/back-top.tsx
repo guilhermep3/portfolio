@@ -30,8 +30,9 @@ export const BackTop = () => {
 
   return (
     <button
-      className={`fixed bottom-5 right-5 sm:bottom-10 sm:right-10 p-3 md:p-4 rounded-full bg-gray-800 z-30 transition duration-300 cursor-pointer flex overflow-hidden
-         ${isVisible ? 'pointer-events-auto opacity-100' : ' pointer-events-none opacity-0'}`}
+      className={`fixed bottom-5 right-5 sm:bottom-10 sm:right-10 p-3 md:p-4 rounded-full bg-gray-800
+        z-30 transition duration-300 cursor-pointer flex overflow-hidden
+        ${isVisible ? 'pointer-events-auto opacity-100' : ' pointer-events-none opacity-0'}`}
       onClick={scrollToTop}
     >
       <ArrowUp className="text-white" />

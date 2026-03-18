@@ -9,9 +9,10 @@ export const SkillsTech = () => {
         {skillsData.map((skill) => (
           <div key={skill.name} data-aos="fade-up" className="group relative">
             <div
-              className="relative flex justify-center items-center p-3 rounded-2xl
-              bg-black/20 backdrop-blur-md border border-zinc-500/50 shadow-lg overflow-hidden cursor-pointer
-              transition-all duration-300 group-hover:scale-105 group-hover:shadow-blue-500/20"
+              className="relative flex justify-center items-center p-3 rounded-2xl cursor-pointer
+              bg-black/50 backdrop-blur-md border border-zinc-500/50 shadow-lg overflow-hidden
+                hover:border-[var(--primary-color)] group-hover:scale-105 group-hover:shadow-blue-500/20
+                transition-all duration-300"
             >
               <Image src={`/technologies/${skill.src}`} alt={skill.name}
                 width={100} height={100}
@@ -24,7 +25,9 @@ export const SkillsTech = () => {
                 {skill.description}
               </div>
               {skill.intermediate && (
-                <span className="absolute top-1 right-1 bg-red-500/90 text-[10px] px-2 py-0.5 rounded-full text-white">
+                <span
+                  className="absolute top-1 right-1 bg-red-500/90 text-[10px] px-2 py-0.5 rounded-full text-white"
+                >
                   Médio
                 </span>
               )}

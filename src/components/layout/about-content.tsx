@@ -23,11 +23,11 @@ export const AboutContent = () => {
           <p>Descubra mais<br className="my-1" /> Sobre mim</p>
         </div>
         <div data-aos="zoom-in"
-          className="flex flex-col gap-3 text-sm lg:text-[0.95rem] leading-relaxed text-zinc-300"
+          className="flex flex-col text-sm lg:text-[0.95rem] leading-relaxed text-zinc-300"
         >
           {paragraphs.map((text, index) => (
             <p key={index}
-              className={`pl-2 border-l-2 transition-all duration-200
+              className={`py-2 pl-2 border-l-2 transition-all duration-200
                 ${activeIndex === null || activeIndex === index
                   ? "text-foreground border-[var(--primary-color)]"
                   : "text-zinc-300 border-transparent"
