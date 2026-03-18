@@ -1,13 +1,18 @@
 "use client"
 import { skillsData } from "@/data/skills-data";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export const SkillsTech = () => {
   return (
     <div className="flex flex-col gap-14 w-full max-w-3xl">
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 justify-items-center mx-auto">
         {skillsData.map((skill) => (
-          <div key={skill.name} data-aos="fade-up" className="group relative">
+          <motion.div key={skill.name}
+            initial={{ opacity: 0, scale: 0.4, y: 40 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            className="group relative">
             <div
               className="relative flex justify-center items-center p-3 rounded-2xl cursor-pointer
               bg-black/50 backdrop-blur-md border border-zinc-500/50 shadow-lg overflow-hidden
@@ -35,7 +40,7 @@ export const SkillsTech = () => {
             <p className="mt-2 text-sm text-center text-gray-300">
               {skill.name}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

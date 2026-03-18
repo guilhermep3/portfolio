@@ -2,6 +2,7 @@ import { Github, Linkedin } from "lucide-react"
 import Link from "next/link"
 import { Divider } from "../svg/divider"
 import { LinkIcon } from "../link-icon"
+import { motion } from "motion/react"
 
 export const Hero = () => {
 
@@ -21,27 +22,46 @@ export const Hero = () => {
       </div>
       <div className="containerStyle relative flex justify-center items-center flex-col z-10">
         <div className="flex justify-center items-center flex-col gap-3 text-center">
-          <p data-aos="fade-down" data-aos-delay="2000"
-            className="text-base md:text-lg font-semibold"
+          <motion.div
+            initial={{ opacity: 0, scale: 0.4, y: -40 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
           >
-            Olá, eu sou o
-          </p>
-          <h1 data-aos="zoom-in" data-aos-delay="2000"
-            className="righteous text-5xl md:text-8xl font-extrabold text-transparent bg-linear-to-r from-blue-50 to-blue-200 bg-clip-text"
+            <p
+              className="text-base md:text-lg font-semibold"
+            >
+              Olá, eu sou o
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.2, y: -40 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
           >
-            Guilherme Pereira
-          </h1>
-          <p data-aos="fade-up" data-aos-delay="2000"
-            className="text-sm md:text-base mt-4 mb-8 max-w-xl"
+            <h1 className="righteous text-5xl md:text-8xl font-extrabold text-transparent bg-linear-to-r from-blue-50 to-blue-200 bg-clip-text"
+            >
+              Guilherme Pereira
+            </h1>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.2, y: 40 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
           >
-            Desenvolvedor Front-End. Construindo Universos Digitais, Transformando Ideias em Realidade
-          </p>
-          <div data-aos="fade-up" data-aos-delay="2000">
+            <p className="text-sm md:text-base mt-4 mb-8 max-w-xl">
+              Desenvolvedor Front-End. Construindo Universos Digitais, Transformando Ideias em Realidade
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.2, y: 40 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
+          >
             <Link href={'/curriculo-guilherme-pereira-dev.pdf'}
               download={'curriculo-guilherme-pereira-dev'}
               className="buttonStyle boxShadowStyle"
             >Download CV</Link>
-          </div>
+          </motion.div>
         </div>
         <div className="absolute bottom-10 md:bottom-20 right-5 flex gap-4">
           <LinkIcon Icon={Linkedin} href="https://www.linkedin.com/in/guilherme-pereira3/" />

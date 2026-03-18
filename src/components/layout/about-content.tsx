@@ -3,6 +3,7 @@ import { aboutData } from "@/data/about-data"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { motion } from "motion/react"
 
 const paragraphs = [
   "Sou desenvolvedor front-end em evolução para fullstack, com foco em Next.js e TypeScript, criando interfaces modernas, responsivas e orientadas à melhor experiência do usuário.",
@@ -14,15 +15,21 @@ const paragraphs = [
 export const AboutContent = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
-  const highlighted = activeIndex ?? 0
-
   return (
     <div className="flex flex-col lg:flex-row gap-10 z-10">
       <div className="flex-1 flex flex-col gap-5 justify-center items-center">
-        <div data-aos={'zoom-in'} className="righteous w-full text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.2, y: 40 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 1 }}
+          className="righteous w-full text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide"
+        >
           <p>Descubra mais<br className="my-1" /> Sobre mim</p>
-        </div>
-        <div data-aos="zoom-in"
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.2, y: 40 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 1 }}
           className="flex flex-col text-sm lg:text-[0.95rem] leading-relaxed text-zinc-300"
         >
           {paragraphs.map((text, index) => (
@@ -38,18 +45,27 @@ export const AboutContent = () => {
               {text}
             </p>
           ))}
-        </div>
+        </motion.div>
       </div>
       <div className="flex-1 flex flex-col justify-center items-start gap-8 z-20">
         <div className="w-full">
-          <div data-aos="zoom-in">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.2, y: 40 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
+          >
             <p className="text-xs sm:text-sm uppercase tracking-[0.25em] text-foreground mb-3 font-semibold"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               Formação
             </p>
-          </div>
-          <div data-aos="fade-down" className="group">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.2, y: -40 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="group"
+          >
             <Link href={"https://b7web.com.br/"} target="_blank"
               className="bgGradient flex justify-between items-center gap-2 transition p-3 rounded-md">
               <div className="flex gap-3 items-center">
@@ -63,24 +79,33 @@ export const AboutContent = () => {
                 Desenvolvimento Web
               </div>
             </Link>
-          </div>
+          </motion.div>
         </div>
         <div className="w-full">
-          <div data-aos="zoom-in">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.2, y: -0 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
+          >
             <p className="text-xs sm:text-sm uppercase tracking-[0.25em] text-foreground mb-3 font-semibold"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               Principais destaques
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
             {aboutData.map((item, index) => (
-              <div key={index} data-aos="fade-down">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.2, y: -40 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 1 }}
+              >
                 <div className="bgGradient p-4 flex items-center gap-2 rounded-lg transition-all duration-300">
                   {item.icon}
                   <p>{item.title}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

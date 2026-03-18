@@ -5,6 +5,7 @@ import { useToastStore } from "@/store/toastStore"
 import { useState } from "react"
 import { LinkIcon } from "../link-icon"
 import { DottedBg } from "../svg/dotted-bg"
+import { motion } from "motion/react"
 
 const contactsData = [
   {
@@ -44,7 +45,13 @@ export const Contacts = () => {
         <p className="text-center mb-10">Selecione a maneira que preferir e entre em contato comigo</p>
         <div className="flex justify-center sm:items-center flex-col md:flex-row gap-8">
           {contactsData.map((c) => (
-            <div data-aos="zoom-in" className="sm:max-w-md w-full" key={c.id}>
+            <motion.div
+              key={c.id}
+              initial={{ opacity: 0, scale: 0.4, y: 40 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.7 }}
+              className="sm:max-w-md w-full"
+            >
               <div className="group bgGradient flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1
                 pr-2 rounded-2xl transition duration-300 cursor-pointer hover:border-[var(--primary-color)]!"
                 onClick={() => { handleCopyText(c.text), setIdClicked(c.id) }}
@@ -60,7 +67,7 @@ export const Contacts = () => {
                   : <Copy className="ml-auto" />
                 }
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="flex justify-center items-center gap-4 mt-12 mx-auto">
