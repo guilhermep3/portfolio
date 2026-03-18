@@ -1,7 +1,6 @@
 "use client"
 import { BackTop } from "@/components/back-top";
 import { About } from "@/components/layout/about";
-import { ClientPage } from "@/components/layout/client-page";
 import { Contacts } from "@/components/layout/contacts";
 import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/layout/hero";
@@ -28,17 +27,15 @@ export default function Home() {
   return (
     <main className="relative">
       {loading && <Loading fadeOut={fadeOut} />}
-      <ClientPage>
-        <Hero />
-        <About />
-        <Technologies />
-        <Libraries />
-        <Projects />
-        <Modal />
-        <Contacts />
-        <Footer />
-        <BackTop />
-      </ClientPage >
+      <Hero />
+      <About />
+      <Technologies />
+      <Libraries />
+      <Projects />
+      <Modal />
+      <Contacts />
+      <Footer />
+      <BackTop />
     </main>
   );
 }
