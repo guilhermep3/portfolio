@@ -6,9 +6,8 @@
 :root {
   --background: #000000;
   --foreground: #ffffff;
-  --primary-color: #7f33e4;
-  --primary-color-l: #8f4fe4;
-  --secondary-color: #3146ff;
+  --primary-color: #4053ff;
+  --secondary-color: #00A36C;
   --bg-card: #10101b77;
 }
 
@@ -34,20 +33,20 @@
   }
   .buttonStyle {
     @apply px-6 py-3 text-lg font-semibold rounded-md transition duration-200 cursor-crosshair 
-      bg-[linear-gradient(to_right,_#7f33e4,_#3150ff)] hover:brightness-110;
+      bg-[linear-gradient(to_right,_#4053ff,_#00A36C)] hover:brightness-110;
   }
   .bgGradient {
     @apply bg-linear-to-r from-zinc-950/50 via-zinc-900/50 to-zinc-950/50 backdrop-blur-md 
       hover:from-zinc-950/80 hover:via-zinc-900/80 hover:to-zinc-950/80 border border-zinc-700 
-        hover:border-zinc-400
+        hover:border-zinc-500
   }
   .bgGradient-noOpacity {
     @apply bg-linear-to-r from-zinc-950 via-zinc-900 to-zinc-950 backdrop-blur-md 
     hover:from-zinc-950 hover:via-zinc-900 hover:to-zinc-950 border border-zinc-700 
-    hover:border-zinc-400
+    hover:border-zinc-500
   }
   .boxShadowStyle {
-    @apply shadow-[0px_0px_8px_#7f33e4] hover:shadow-[0px_0px_24px_#7f33e4] transition-shadow 
+    @apply shadow-[0px_0px_8px_#4053ff] hover:shadow-[0px_0px_24px_#4053ff] transition-shadow 
     duration-300 ease-in-out;
   }
 }

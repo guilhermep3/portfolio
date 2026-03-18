@@ -11,7 +11,7 @@ export const Hero = () => {
         <Divider />
       </div>
       <div className="absolute inset-0 h-screen w-full bg-center bg-cover"
-        style={{ backgroundImage: 'url("/wavy_background.jpg")', zIndex: -2 }}>
+        style={{ backgroundImage: 'url("/wavy_background_blue_green.jpg")', zIndex: -2 }}>
       </div>
       <div className="absolute left-0 right-0 bottom-0 h-1/2 bg-[linear-gradient(to_bottom,_#00000000,_#000000bb)] z-[-2]"></div>
       <div className="absolute top-32 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-24 md:-rotate-90
@@ -27,7 +27,7 @@ export const Hero = () => {
             Olá, eu sou o
           </p>
           <h1 data-aos="zoom-in" data-aos-delay="2000"
-            className="righteous text-5xl md:text-8xl font-extrabold text-transparent bg-linear-to-r from-indigo-50 to-indigo-200 bg-clip-text"
+            className="righteous text-5xl md:text-8xl font-extrabold text-transparent bg-linear-to-r from-blue-50 to-blue-200 bg-clip-text"
           >
             Guilherme Pereira
           </h1>

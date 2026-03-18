@@ -9,7 +9,7 @@ export const Loading = ({ fadeOut }: { fadeOut: boolean }) => {
     >
       <div className="w-32 h-32 animate-pulse">
         <Image
-          src="/logo-g.png"
+          src="/logo-g-blue.png"
           alt="Logo"
           width={128} height={128}
           className="w-full h-full"

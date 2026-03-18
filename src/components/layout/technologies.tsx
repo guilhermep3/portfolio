@@ -6,7 +6,7 @@ export const Technologies = () => {
 
   return (
     <section id="technologies" className="relative bg-center bg-cover bg-no-repeat"
-      style={{ backgroundImage: 'url("/wavy_background.jpg")' }}>
+      style={{ backgroundImage: 'url("/wavy_background_blue_green.jpg")' }}>
       <div className="absolute top-0 w-full">
         <Divider />
       </div>

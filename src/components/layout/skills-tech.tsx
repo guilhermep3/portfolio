@@ -11,7 +11,7 @@ export const SkillsTech = () => {
             <div
               className="relative flex justify-center items-center p-3 rounded-2xl
               bg-black/20 backdrop-blur-md border border-zinc-500/50 shadow-lg overflow-hidden cursor-pointer
-              transition-all duration-300 group-hover:scale-105 group-hover:shadow-indigo-500/30"
+              transition-all duration-300 group-hover:scale-105 group-hover:shadow-blue-500/20"
             >
               <Image src={`/technologies/${skill.src}`} alt={skill.name}
                 width={100} height={100}

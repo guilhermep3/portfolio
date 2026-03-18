@@ -37,7 +37,7 @@ export const Header = () => {
         flex justify-between items-center gap-6 bg-zinc-900/50 backdrop-blur-md px-5 py-3 rounded-[40px] transition-all duration-500 border border-zinc-700`}
       >
         <Link href={'/'}>
-          <Image src={'/logo-g.png'} alt="logo desenvolvedor front-end"
+          <Image src={'/logo-g-blue.png'} alt="logo desenvolvedor front-end"
             width={48} height={48}
           />
         </Link>

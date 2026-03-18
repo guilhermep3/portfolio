@@ -45,17 +45,16 @@ export const Contacts = () => {
         <div className="flex justify-center sm:items-center flex-col md:flex-row gap-8">
           {contactsData.map((c) => (
             <div data-aos="zoom-in" className="sm:max-w-md w-full" key={c.id}>
-              <div
-                className="group flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1 pr-2 rounded-2xl transition duration-300 cursor-pointer
-                bgGradient"
+              <div className="group bgGradient flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1 pr-2
+                  rounded-2xl transition duration-300 cursor-pointer"
                 onClick={() => { handleCopyText(c.text), setIdClicked(c.id) }}
               >
                 <div className="bgGradient-noOpacity p-2 md:p-4 -mt-[1px] rounded-md transition duration-300
-                  scale-[120%] group-hover:scale-[130%]
-                ">
+                  scale-[120%] group-hover:scale-[130%] group-hover:border-zinc-500"
+                >
                   <c.icon className="w-5 md:w-8 h-5 md:h-8" />
                 </div>
-                <p className="md:text-lg">{c.text}</p>
+                <p className="text-xs md:text-base">{c.text}</p>
                 {isToastOpen && idCicked === c.id
                   ? <Check className="ml-auto" />
                   : <Copy className="ml-auto" />

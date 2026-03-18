@@ -111,16 +111,6 @@
   },
   {
     "id": 12,
-    "name": "Front Social",
-    "description": "Front Social é um projeto front-end que simula a interface de uma rede social, com o objetivo de praticar organização de componentes, consumo de dados via fetch e construção de um layout responsivo baseado em um design do Figma.",
-    "technologies": ["Next.Js", "Typescript"],
-    "image": "front-social.png",
-    "url": "https://front-social-gp3.vercel.app/",
-    "github": "https://github.com/guilhermep3/front-social",
-    "type": ["Web-App"]
-  },
-  {
-    "id": 13,
     "name": "LaPizza",
     "description": "LaPizza é um site de pizzaria com uma página inicial que destaca o menu e informações do estabelecimento. Construído com HTML, CSS e JavaScript, o projeto apresenta um sistema simples de compra, ideal para pequenas empresas.",
     "technologies": ["HTML", "CSS", "Javascript"],
@@ -130,7 +120,7 @@
     "type": ["E-commerce"]
   },
   {
-    "id": 14,
+    "id": 13,
     "name": "Corte Clássico",
     "description": "Corte Clássico é uma landing page para uma barbearia, focada em atrair clientes por meio de um design simples e objetivo. O projeto foi desenvolvido para praticar componentes, organização de pastas e estilização com CSS.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -140,7 +130,7 @@
     "type": ["Landing Page"]
   },
   {
-    "id": 15,
+    "id": 14,
     "name": "Clima Cidade",
     "description": "Clima Cidade é um projeto que consome a API OpenWeatherMap utilizando fetch e try/catch, permitindo visualizar informações climáticas de diferentes cidades. O projeto possui um design moderno, responsivo e um background dinâmico desenvolvido com JavaScript.",
     "technologies": ["HTML", "CSS", "Javascript"],
@@ -150,7 +140,7 @@
     "type": ["Web-App"]
   },
   {
-    "id": 16,
+    "id": 15,
     "name": "Linkedin Profile",
     "description": "Linkedin Profile é um projeto que replica a página de perfil do LinkedIn, desenvolvido para praticar consumo de APIs e carregamento de dados. O projeto simula requisições de dados utilizando Axios e reproduz algumas funcionalidades da plataforma.",
     "technologies": ["Next.Js", "Typescript", "Axios"],
