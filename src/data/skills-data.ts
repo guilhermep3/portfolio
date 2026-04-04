@@ -31,6 +31,12 @@ export const skillsData: skillType[] = [
     intermediate: false
   },
   {
+    name: 'Vite',
+    src: 'vite.svg',
+    description: 'Ferramenta de build',
+    intermediate: false
+  },
+  {
     name: 'Javascript',
     src: 'javascript.svg',
     description: 'Linguagem de programação web',

@@ -38,7 +38,8 @@ export const Hero = () => {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 1 }}
           >
-            <h1 className="righteous text-5xl md:text-8xl font-extrabold text-transparent bg-linear-to-r from-blue-50 to-blue-200 bg-clip-text"
+            <h1 className="righteous text-5xl md:text-8xl font-extrabold text-transparent 
+              bg-linear-to-r from-blue-50 to-blue-200 bg-clip-text"
             >
               Guilherme Pereira
             </h1>

@@ -8,7 +8,11 @@ export const SectionName = ({ label }: props) => {
   return (
     <motion.div className="flex justify-center items-center z-10">
       <div className="relative righteous text-center mt-4 mb-20 w-fit">
-        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 text-6xl md:text-8xl text-white/5 blur-[2px] select-none">{label}</p>
+        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 text-6xl md:text-8xl 
+          text-white/5 blur-[2px] select-none"
+        >
+          {label}
+        </p>
         <p className="text-2xl md:text-5xl lg:text-6xl font-bold mb-2">{label}</p>
         <span className="separatorLinePrimary"></span>
         <span className="separatorLineSecondary"></span>
