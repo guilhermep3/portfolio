@@ -21,13 +21,13 @@ export const librariesData = [
     tags: ["State", "React", "Performance", "Frontend"],
   },
   {
-    name: "Axios",
-    description: "Cliente HTTP simples para consumo de APIs.",
+    name: "Tanstack Query",
+    description: "Gerenciamento e cache de dados assíncronos.",
     tags: ["HTTP", "API", "Frontend"],
   },
   {
-    name: "Tanstack Query",
-    description: "Gerenciamento e cache de dados assíncronos.",
+    name: "Axios",
+    description: "Cliente HTTP simples para consumo de APIs.",
     tags: ["HTTP", "API", "Frontend"],
   },
   {
@@ -40,4 +40,9 @@ export const librariesData = [
     description: "ORM leve com controle direto de SQL.",
     tags: ["ORM", "Database", "SQL", "Backend"],
   },
+  {
+    name: "Motion",
+    description: "Animações e transições para UI/UX",
+    tags: ["Animação", "Frontend"]
+  }
 ];
