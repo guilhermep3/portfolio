@@ -16,29 +16,41 @@ export const AboutContent = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   return (
-    <div className="flex flex-col lg:flex-row gap-10 z-10">
-      <div className="flex-1 flex flex-col gap-5 justify-center items-center">
+    <div className="flex flex-col lg:flex-row gap-16 z-10">
+      <div className="flex-1 flex flex-col gap-8 justify-center items-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.2, y: 40 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="righteous w-full text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide"
+          className="w-full"
         >
-          <p>Descubra mais<br className="my-1" /> Sobre mim</p>
+          <p className="righteous text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide leading-tight"
+            style={{ color: 'var(--foreground)' }}
+          >
+            Descubra mais<br className="my-1" /> Sobre mim
+          </p>
+          <div className="accentLine mt-4 mx-auto lg:mx-0" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.2, y: 40 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 1 }}
-          className="flex flex-col text-sm lg:text-[0.95rem] leading-relaxed text-zinc-300"
+          transition={{ delay: 0.3, duration: 1 }}
+          className="flex flex-col gap-3 w-full"
         >
           {paragraphs.map((text, index) => (
             <p key={index}
-              className={`py-2 pl-2 border-l-2 transition-all duration-200
-                ${activeIndex === null || activeIndex === index
-                  ? "text-foreground border-[var(--primary-color)]"
-                  : "text-zinc-300 border-transparent"
-                }`}
+              className="py-3 pl-4 rounded-r-lg text-sm lg:text-[0.9rem] leading-relaxed border-l-2 transition-all duration-300 cursor-default"
+              style={{
+                borderColor: activeIndex === null || activeIndex === index
+                  ? 'var(--primary)'
+                  : 'transparent',
+                color: activeIndex === null || activeIndex === index
+                  ? 'var(--foreground)'
+                  : 'var(--foreground-muted)',
+                background: activeIndex === index
+                  ? 'rgba(79, 99, 255, 0.04)'
+                  : 'transparent',
+              }}
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(null)}
             >
@@ -47,63 +59,69 @@ export const AboutContent = () => {
           ))}
         </motion.div>
       </div>
-      <div className="flex-1 flex flex-col justify-center items-start gap-8 z-20">
+      <div className="flex-1 flex flex-col justify-center items-start gap-10 z-20">
         <div className="w-full">
           <motion.div
-            initial={{ opacity: 0, scale: 0.2, y: 40 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+            className="mb-4"
           >
-            <p className="text-xs sm:text-sm uppercase tracking-[0.25em] text-foreground mb-3 font-semibold"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
-            >
-              Formação
-            </p>
+            <p className="labelStyle">Formação</p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, scale: 0.2, y: -40 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 1 }}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
             className="group"
           >
             <Link href={"https://b7web.com.br/"} target="_blank"
-              className="bgGradient flex justify-between items-center gap-2 transition p-3 rounded-md">
-              <div className="flex gap-3 items-center">
-                <Image src="/b7web_logo.png" alt="b7web"
-                  width={40} height={40}
-                  className="w-10 h-10 rounded-md"
-                />
-                B7Web
+              className="bgGradient flex justify-between items-center gap-3 p-4 rounded-xl"
+            >
+              <div className="flex gap-4 items-center">
+                <div className="p-1 rounded-lg"
+                  style={{ background: 'rgba(79,99,255,0.1)', border: '1px solid rgba(79,99,255,0.2)' }}
+                >
+                  <Image src="/b7web_logo.png" alt="b7web"
+                    width={40} height={40}
+                    className="w-9 h-9 rounded-md"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold text-sm" style={{ color: 'var(--foreground)' }}>B7Web</p>
+                  <p className="text-xs mt-0.5" style={{ color: 'var(--foreground-muted)' }}>Plataforma de ensino</p>
+                </div>
               </div>
-              <div className="text-xs text-zinc-300 bg-zinc-900 py-1 px-2 rounded-full border border-zinc-500 group-hover:border-[var(--primary-color)] transition-all duration-200">
-                Desenvolvimento Web
-              </div>
+              <span className="spanStyle shrink-0">Desenvolvimento Web</span>
             </Link>
           </motion.div>
         </div>
         <div className="w-full">
           <motion.div
-            initial={{ opacity: 0, scale: 0.2, y: -0 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+            className="mb-4"
           >
-            <p className="text-xs sm:text-sm uppercase tracking-[0.25em] text-foreground mb-3 font-semibold"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
-            >
-              Principais destaques
-            </p>
+            <p className="labelStyle">Principais destaques</p>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
             {aboutData.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.2, y: -40 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 1 }}
+              <motion.div key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 * index + 0.2, duration: 0.7 }}
               >
-                <div className="bgGradient p-4 flex items-center gap-2 rounded-lg transition-all duration-300">
-                  {item.icon}
-                  <p>{item.title}</p>
+                <div className="bgGradient p-4 flex items-center gap-3 rounded-xl group">
+                  <div className="shrink-0 p-2 rounded-lg transition-all duration-300"
+                    style={{
+                      background: 'rgba(79,99,255,0.1)',
+                      border: '1px solid rgba(79,99,255,0.15)',
+                    }}
+                  >
+                    {item.icon}
+                  </div>
+                  <p className="text-sm font-medium" style={{ color: 'var(--foreground)' }}>{item.title}</p>
                 </div>
               </motion.div>
             ))}

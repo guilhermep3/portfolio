@@ -3,6 +3,7 @@ import { projectType } from "@/utils/types";
 import { useEffect, useState } from "react";
 import { Project } from "../project";
 import { TabsHeader } from "./tabs-header";
+import { motion } from "motion/react"
 
 export const ProjectsTabs = () => {
   const [projects, setProjects] = useState<projectType[] | null>(null);
@@ -21,11 +22,9 @@ export const ProjectsTabs = () => {
   useEffect(() => {
     if (projects) {
       const allTypes = new Set<string>();
-
       projects.forEach((project) => {
         project.type.forEach(t => allTypes.add(t));
       });
-
       setTabs(['Todos', ...Array.from(allTypes)]);
     }
   }, [projects])
@@ -35,13 +34,17 @@ export const ProjectsTabs = () => {
   );
 
   return (
-    <div className="flex flex-col gap-4 w-full min-w-0">
+    <div className="flex flex-col gap-6 w-full min-w-0">
       {projects &&
-        <TabsHeader tabs={tabs}
-          activeTab={activeTab} setActiveTab={setActiveTab}
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.7 }}
+        >
+          <TabsHeader tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+        </motion.div>
       }
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 min-h-80">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 min-h-80">
         {filteredProjects?.map((p) => (
           <Project key={p.id} project={p} />
         ))}

@@ -19,6 +19,7 @@ const contactsData = [
     icon: Phone
   }
 ]
+
 export const Contacts = () => {
   const [idCicked, setIdClicked] = useState<number | null>(null);
   const { toastText, isToastOpen, setToastText, setIsToastOpen } = useToastStore();
@@ -33,47 +34,106 @@ export const Contacts = () => {
   }
 
   return (
-    <section id="contacts" className="relative pb-10">
+    <section id="contacts" className="relative pb-16">
       <DottedBg />
-      <div className={`${isToastOpen ? 'translate-y-0' : 'translate-y-96'} fixed bottom-5 left-1/2 -translate-x-1/2 z-40 
-        flex flex-col gap-2 p-4 text-center bg-zinc-900 border border-zinc-700 rounded-md transition duration-300`}>
-        <p className="font-semibold">Conteúdo copiado</p>
-        <p className="text-sm">{toastText ?? ''}</p>
+      <div className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-40 transition-all duration-400
+        ${isToastOpen ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0 pointer-events-none'}`}
+      >
+        <div className="flex items-center gap-3 px-5 py-3 rounded-xl"
+          style={{
+            background: 'rgba(10,10,24,0.95)',
+            border: '1px solid rgba(79,99,255,0.3)',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.6), 0 0 20px rgba(79,99,255,0.15)',
+            backdropFilter: 'blur(20px)',
+          }}
+        >
+          <Check size={15} style={{ color: 'var(--secondary-bright)' }} />
+          <div>
+            <p className="text-xs font-semibold" style={{ color: 'var(--foreground)' }}>Copiado!</p>
+            <p className="text-xs mt-0.5" style={{ color: 'var(--foreground-muted)' }}>{toastText ?? ''}</p>
+          </div>
+        </div>
       </div>
+
       <div className="containerStyle">
         <SectionName label="Contatos" />
-        <p className="text-center mb-10">Selecione a maneira que preferir e entre em contato comigo</p>
-        <div className="flex justify-center sm:items-center flex-col md:flex-row gap-8">
-          {contactsData.map((c) => (
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.7 }}
+          className="text-center mb-12 text-sm md:text-base max-w-md mx-auto leading-relaxed"
+          style={{ color: 'var(--foreground-muted)' }}
+        >
+          Selecione a maneira que preferir e entre em contato comigo
+        </motion.p>
+        <div className="flex justify-center items-center flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+          {contactsData.map((c, i) => (
             <motion.div
               key={c.id}
-              initial={{ opacity: 0, scale: 0.4, y: 40 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.7 }}
-              className="sm:max-w-md w-full"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 + 0.15, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              className="w-full"
             >
-              <div className="group bgGradient flex-1 sm:max-w-md flex items-center gap-2 md:gap-4 py-1
-                pr-2 rounded-2xl transition duration-300 cursor-pointer hover:border-[var(--primary-color)]!"
-                onClick={() => { handleCopyText(c.text), setIdClicked(c.id) }}
+              <div
+                className="group flex items-center gap-4 p-4 rounded-2xl cursor-pointer transition-all duration-300"
+                style={{
+                  background: 'rgba(8,8,20,0.8)',
+                  border: '1px solid rgba(255,255,255,0.07)',
+                  backdropFilter: 'blur(16px)',
+                  boxShadow: '0 4px 24px rgba(0,0,0,0.4)',
+                }}
+                onClick={() => { handleCopyText(c.text); setIdClicked(c.id); }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(79,99,255,0.4)';
+                  (e.currentTarget as HTMLElement).style.boxShadow = '0 0 20px rgba(79,99,255,0.12), 0 4px 24px rgba(0,0,0,0.5)';
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.07)';
+                  (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(0,0,0,0.4)';
+                }}
               >
-                <div className="bgGradient-noOpacity p-2 md:p-4 -mt-[1px] rounded-md transition duration-300
-                  scale-[120%] group-hover:scale-[130%] group-hover:border-[var(--primary-color)]!"
+                <div className="shrink-0 p-3 rounded-xl transition-all duration-300"
+                  style={{
+                    background: 'rgba(79,99,255,0.1)',
+                    border: '1px solid rgba(79,99,255,0.2)',
+                  }}
                 >
-                  <c.icon className="w-5 md:w-8 h-5 md:h-8" />
+                  <c.icon className="w-5 h-5" style={{ color: 'var(--primary-bright)' }} />
                 </div>
-                <p className="text-xs md:text-base">{c.text}</p>
-                {isToastOpen && idCicked === c.id
-                  ? <Check className="ml-auto" />
-                  : <Copy className="ml-auto" />
-                }
+                <p className="text-sm md:text-base flex-1 font-medium truncate"
+                  style={{ color: 'var(--foreground)' }}
+                >
+                  {c.text}
+                </p>
+                <div className="shrink-0 p-2 rounded-lg transition-all duration-200"
+                  style={{
+                    background: isToastOpen && idCicked === c.id
+                      ? 'rgba(0,196,126,0.12)'
+                      : 'rgba(255,255,255,0.04)',
+                    border: `1px solid ${isToastOpen && idCicked === c.id
+                      ? 'rgba(0,196,126,0.3)'
+                      : 'rgba(255,255,255,0.08)'}`,
+                  }}
+                >
+                  {isToastOpen && idCicked === c.id
+                    ? <Check size={15} style={{ color: 'var(--secondary-bright)' }} />
+                    : <Copy size={15} style={{ color: 'var(--foreground-muted)' }} />
+                  }
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
-        <div className="flex justify-center items-center gap-4 mt-12 mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.7 }}
+          className="flex justify-center items-center gap-4 mt-14"
+        >
           <LinkIcon Icon={Linkedin} href="https://www.linkedin.com/in/guilherme-pereira3/" />
           <LinkIcon Icon={Github} href="https://github.com/guilhermep3" />
-        </div>
+        </motion.div>
       </div>
     </section>
   )

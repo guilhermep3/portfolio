@@ -3,12 +3,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --primary-color: #4053ff;
-  --secondary-color: #00A36C;
-  --secondary-color-bright: #14f3a9;
-  --bg-card: #10101b77;
+  /* Core palette */
+  --background: #02020a;
+  --foreground: #f0f0ff;
+  --foreground-muted: #b7b7c2;
+
+  /* Brand */
+  --primary: #4f63ff;
+  --primary-bright: #6b7dff;
+  --primary-glow: rgba(79, 99, 255, 0.25);
+  --secondary: #00c47e;
+  --secondary-bright: #1affa8;
+  --secondary-glow: rgba(0, 196, 126, 0.2);
+
+  /* Surfaces */
+  --surface-1: rgba(12, 12, 28, 0.85);
+  --surface-2: rgba(18, 18, 38, 0.9);
+  --surface-border: rgba(255, 255, 255, 0.07);
+  --surface-border-hover: rgba(255, 255, 255, 0.14);
+
+  /* Gradients */
+  --gradient-brand: linear-gradient(135deg, var(--primary), var(--secondary));
+  --gradient-text: linear-gradient(135deg, #c8d0ff, #e8fff6);
+  --gradient-surface: linear-gradient(135deg, rgba(12,12,28,0.9), rgba(6,18,24,0.9));
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-primary: 0 0 20px rgba(79, 99, 255, 0.35), 0 0 60px rgba(79, 99, 255, 0.12);
+  --shadow-secondary: 0 0 20px rgba(0, 196, 126, 0.3);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255,255,255,0.05) inset;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Legacy aliases (mantém compatibilidade) */
+  --primary-color: var(--primary);
+  --secondary-color: var(--secondary);
+  --secondary-color-bright: var(--secondary-bright);
+  --bg-card: var(--surface-1);
 }
 
 @theme inline {
@@ -16,43 +64,136 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --primary-color: var(--primary-color);
+  --primary-color: var(--primary);
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Montserrat', sans-serif;
+  }
+  ::selection {
+    background: var(--primary-glow);
+    color: var(--foreground);
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: var(--radius-full);
+  }
 }
 
 @layer components {
   .containerStyle {
-    @apply container h-full mx-auto px-4 py-20;
+    @apply container h-full mx-auto px-6 py-24;
   }
-  .separatorLinePrimary{
-    @apply absolute -bottom-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent 
-      via-[var(--primary-color)] to-transparent w-full h-[2px];
+
+  .separatorLinePrimary {
+    @apply absolute -bottom-0 left-1/2 -translate-x-1/2 w-full h-px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
   }
-  .separatorLineSecondary{
-    @apply absolute -bottom-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent 
-      via-[var(--secondary-color)] to-transparent w-2/4 h-[8px] blur-sm;
+
+  .separatorLineSecondary {
+    @apply absolute -bottom-0 left-1/2 -translate-x-1/2 w-2/4 h-2;
+    background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+    filter: blur(4px);
   }
+
   .buttonStyle {
-    @apply px-6 py-3 text-lg font-semibold rounded-md transition duration-200 cursor-crosshair 
-      bg-[linear-gradient(to_right,_#4053ff,_#00A36C)] hover:brightness-110;
+    @apply relative px-7 py-3 text-sm font-semibold rounded-md overflow-hidden
+      transition-all cursor-crosshair inline-flex items-center gap-2;
+    background: var(--gradient-brand);
+    box-shadow: var(--shadow-primary);
+    letter-spacing: 0.03em;
+
+    &::before {
+      content: '';
+      @apply absolute inset-0 opacity-0 transition-opacity;
+      background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+      transition: opacity var(--transition-fast);
+    }
+
+    &:hover::before {
+      @apply opacity-100;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
   }
+
   .bgGradient {
-    @apply bg-linear-to-r from-zinc-950/50 via-zinc-900/50 to-zinc-950/50 backdrop-blur-md 
-      hover:from-zinc-950/80 hover:via-zinc-900/80 hover:to-zinc-950/80 border border-zinc-700 
-      hover:border-zinc-500
+    background: var(--surface-1);
+    border: 1px solid var(--surface-border);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: var(--surface-2);
+      border-color: var(--surface-border-hover);
+      box-shadow: var(--shadow-card);
+    }
   }
+
   .bgGradient-noOpacity {
-    @apply bg-linear-to-r from-zinc-950 via-zinc-900 to-zinc-950 backdrop-blur-md 
-    hover:from-zinc-950 hover:via-zinc-900 hover:to-zinc-950 border border-zinc-700 
-    hover:border-zinc-500
+    @apply bg-linear-to-r from-zinc-950 via-zinc-900 to-zinc-950;
+    border: 1px solid var(--surface-border);
+    backdrop-filter: blur(16px);
+    transition: border-color var(--transition-base);
+
+    &:hover {
+      border-color: var(--surface-border-hover);
+    }
   }
+
   .boxShadowStyle {
-    @apply shadow-[0px_0px_8px_#4053ff] hover:shadow-[0px_0px_24px_#4053ff] transition-shadow 
-      duration-300 ease-in-out;
+    box-shadow: var(--shadow-primary);
+    transition: box-shadow var(--transition-slow);
+
+    &:hover {
+      box-shadow: 0 0 40px rgba(79, 99, 255, 0.55), 0 0 80px rgba(79, 99, 255, 0.2);
+    }
   }
+
   .spanStyle {
-    @apply text-xs px-2 py-1 rounded-full text-[var(--secondary-color-bright)] bg-[var(--primary-color)]/20
-      border border-[var(--primary-color)]/40 hover:border-[var(--secondary-color)]/50
-      transition-all duration-200
+    @apply inline-flex items-center text-xs px-3 py-1 rounded-full font-medium;
+    color: var(--secondary-bright);
+    background: rgba(79, 99, 255, 0.1);
+    border: 1px solid rgba(79, 99, 255, 0.25);
+    letter-spacing: 0.02em;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba(0, 196, 126, 0.12);
+      border-color: rgba(0, 196, 126, 0.4);
+    }
+  }
+
+  .accentLine {
+    @apply w-12 h-0.5 rounded-full;
+    background: var(--gradient-brand);
+    box-shadow: 0 0 8px var(--primary-glow);
+  }
+
+  .labelStyle {
+    @apply text-xs uppercase tracking-widest font-semibold;
+    color: var(--foreground-muted);
+    letter-spacing: 0.2em;
   }
 }
 
