@@ -14,17 +14,14 @@ export const SectionName = ({ label }: props) => {
     >
       <div className="relative text-center mt-4 mb-20 w-fit">
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 righteous
-          text-6xl md:text-8xl select-none pointer-events-none"
+          text-6xl md:text-8xl select-none pointer-events-none text-transparent blur-xs"
           style={{
-            color: 'transparent',
-            WebkitTextStroke: '1px rgba(255,255,255,0.04)',
-            filter: 'blur(1px)',
+            WebkitTextStroke: '1px rgba(255,255,255,0.07)',
           }}
         >
           {label}
         </p>
-        <p className="righteous text-2xl md:text-5xl lg:text-6xl font-bold mb-3 relative"
-          style={{ color: 'var(--foreground)' }}
+        <p className="righteous text-2xl md:text-5xl lg:text-6xl font-bold mb-3 relative text-[var(--foreground)]"
         >
           {label}
         </p>

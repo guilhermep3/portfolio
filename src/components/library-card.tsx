@@ -13,28 +13,11 @@ export const LibraryCard = ({ data }: props) => {
       transition={{ delay: 0.1, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       className="group h-full"
     >
-      <div className="h-full p-5 rounded-2xl flex flex-col gap-3 transition-all duration-300"
-        style={{
-          background: 'rgba(8,8,20,0.8)',
-          backdropFilter: 'blur(20px)',
-          border: '1px solid rgba(255,255,255,0.07)',
-          boxShadow: '0 4px 24px rgba(0,0,0,0.4)',
-        }}
-        onMouseEnter={e => {
-          (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,196,126,0.3)';
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 0 24px rgba(0,196,126,0.1), 0 8px 32px rgba(0,0,0,0.5)';
-          (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)';
-        }}
-        onMouseLeave={e => {
-          (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.07)';
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(0,0,0,0.4)';
-          (e.currentTarget as HTMLElement).style.transform = '';
-        }}
-      >
-        <h3 className="text-base font-bold" style={{ color: 'var(--foreground)' }}>
+      <div className="cardStyle flex-col h-full p-5">
+        <h3 className="text-base font-bold text-[var(--foreground)]">
           {data.name}
         </h3>
-        <p className="text-sm leading-relaxed flex-1" style={{ color: 'var(--foreground-muted)' }}>
+        <p className="text-sm leading-relaxed flex-1 text-[var(--foreground-muted)]">
           {data.description}
         </p>
         <div className="flex flex-wrap gap-1.5 pt-1">

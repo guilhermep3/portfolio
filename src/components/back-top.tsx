@@ -37,7 +37,7 @@ export const BackTop = () => {
     >
       <ArrowUp className="text-white" />
       <span
-        className="absolute top-0 left-0 w-full h-full bg-[var(--primary-color)] -z-[1] origin-bottom transition-transform duration-100"
+        className="absolute top-0 left-0 w-full h-full bg-[var(--primary)] -z-[1] origin-bottom transition-transform duration-100"
         style={{ transform: `scaleY(${scrollPercentage})` }}
       />
     </button>

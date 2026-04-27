@@ -6,16 +6,15 @@ type Props = {
   Icon: ComponentType<LucideProps>;
   href: string;
 }
-export const LinkIcon = ({ Icon, href }: Props) => {
+export const LinkIcon = ({ href, Icon }: Props) => {
 
   return (
-    <Link
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`p-2 rounded-md transition duration-300 bgGradient-noOpacity`}
+    <Link href={href} target="_blank"
+      className="p-2.5 rounded-sm transition-all duration-200 bg-[var(--surface-1)] cursor-pointer
+        border border-[var(--surface-border)]
+        hover:bg-[var(--surface-2)] hover:border-[var(--primary)]"
     >
-      <Icon />
+      {Icon && <Icon size={18} />}
     </Link>
   )
 }

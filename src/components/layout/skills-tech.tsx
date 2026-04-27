@@ -16,49 +16,30 @@ export const SkillsTech = () => {
             className="group relative w-full max-w-[96px]"
           >
             <div
-              className="relative flex justify-center items-center p-3 rounded-2xl cursor-pointer overflow-hidden transition-all duration-300"
-              style={{
-                background: 'rgba(0,0,0,0.55)',
-                backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255,255,255,0.07)',
-                boxShadow: '0 4px 24px rgba(0,0,0,0.4)',
-              }}
-              onMouseEnter={e => {
-                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(79,99,255,0.5)';
-                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 20px rgba(79,99,255,0.2), 0 4px 24px rgba(0,0,0,0.4)';
-                (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px) scale(1.04)';
-              }}
-              onMouseLeave={e => {
-                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.07)';
-                (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(0,0,0,0.4)';
-                (e.currentTarget as HTMLElement).style.transform = '';
-              }}
+              className="relative flex justify-center items-center p-3 rounded-2xl cursor-pointer
+                bg-[var(--background)]/90 backdrop:blur-lg border border-[var(--surface-border)]
+                hover:border-[var(--primary)] hover:scale-105
+                shadow-lg overflow-hidden transition-all duration-300"
             >
               <Image src={`/technologies/${skill.src}`} alt={skill.name}
                 width={100} height={100}
                 className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
               />
-              <div
-                className="absolute inset-0 flex items-center justify-center px-2 text-xs text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"
-                style={{ background: 'rgba(2,2,10,0.88)', color: 'var(--foreground-muted)' }}
+              <div className="absolute inset-0 flex items-center justify-center px-2 text-xs text-center
+                bg-[var(--background)]/90 backdrop:blur-lg border border-[var(--surface-border)]
+                opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"
               >
                 {skill.description}
               </div>
               {skill.intermediate && (
-                <span className="absolute top-1.5 right-1.5 text-[9px] px-1.5 py-0.5 rounded-full font-semibold"
-                  style={{
-                    background: 'rgba(255,100,80,0.15)',
-                    border: '1px solid rgba(255,100,80,0.4)',
-                    color: '#ff8070',
-                  }}
+                <span className="absolute top-1.5 right-1.5 text-[9px] px-1.5 py-0.5 rounded-full font-semibold
+                  bg-[#ff645026] border border-[#ff645066] text-[#ff8070]"
                 >
                   Médio
                 </span>
               )}
             </div>
-            <p className="mt-2.5 text-xs text-center font-medium"
-              style={{ color: 'var(--foreground-muted)' }}
-            >
+            <p className="mt-2.5 text-xs text-center font-medium text-[var(--foreground-muted)]">
               {skill.name}
             </p>
           </motion.div>

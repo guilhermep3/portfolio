@@ -24,8 +24,8 @@ export const AboutContent = () => {
           transition={{ delay: 0.2, duration: 1 }}
           className="w-full"
         >
-          <p className="righteous text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start tracking-wide leading-tight"
-            style={{ color: 'var(--foreground)' }}
+          <p className="righteous text-2xl md:text-3xl xl:text-4xl font-bold text-center lg:text-start
+            tracking-wide leading-tight color-[var(--foreground)]"
           >
             Descubra mais<br className="my-1" /> Sobre mim
           </p>
@@ -79,8 +79,7 @@ export const AboutContent = () => {
               className="bgGradient flex justify-between items-center gap-3 p-4 rounded-xl"
             >
               <div className="flex gap-4 items-center">
-                <div className="p-1 rounded-lg"
-                  style={{ background: 'rgba(79,99,255,0.1)', border: '1px solid rgba(79,99,255,0.2)' }}
+                <div className="p-1 rounded-lg bg-[var(--surface-1)] border border-[var(--primary-glow)]"
                 >
                   <Image src="/b7web_logo.png" alt="b7web"
                     width={40} height={40}
@@ -113,11 +112,8 @@ export const AboutContent = () => {
                 transition={{ delay: 0.1 * index + 0.2, duration: 0.7 }}
               >
                 <div className="bgGradient p-4 flex items-center gap-3 rounded-xl group">
-                  <div className="shrink-0 p-2 rounded-lg transition-all duration-300"
-                    style={{
-                      background: 'rgba(79,99,255,0.1)',
-                      border: '1px solid rgba(79,99,255,0.15)',
-                    }}
+                  <div className="shrink-0 p-2 rounded-lg transition-all duration-300
+                    bg-[var(--surface-1)] border border-[var(--primary-glow)]"
                   >
                     {item.icon}
                   </div>

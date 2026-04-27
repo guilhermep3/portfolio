@@ -11,16 +11,16 @@
   /* Brand */
   --primary: #4f63ff;
   --primary-bright: #6b7dff;
-  --primary-glow: rgba(79, 99, 255, 0.25);
+  --primary-glow: #4f63ff40;
   --secondary: #00c47e;
   --secondary-bright: #1affa8;
-  --secondary-glow: rgba(0, 196, 126, 0.2);
+  --secondary-glow: #00c47e66;
 
   /* Surfaces */
-  --surface-1: rgba(12, 12, 28, 0.85);
-  --surface-2: rgba(18, 18, 38, 0.9);
-  --surface-border: rgba(255, 255, 255, 0.07);
-  --surface-border-hover: rgba(255, 255, 255, 0.14);
+  --surface-1: #0f0f1cd9;
+  --surface-2: #151526e6;
+  --surface-border: #ffffff16;
+  --surface-border-hover: #ffffff32;
 
   /* Gradients */
   --gradient-brand: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -43,9 +43,9 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-primary: 0 0 20px rgba(79, 99, 255, 0.35), 0 0 60px rgba(79, 99, 255, 0.12);
+  --shadow-primary: 0 0 20px #4f63ff59, 0 0 60px #4f63ff1f;
   --shadow-secondary: 0 0 20px rgba(0, 196, 126, 0.3);
-  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255,255,255,0.05) inset;
+  --shadow-card: 0 8px 32px #00000080, 0 1px 0 #ffffff0d inset;
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,9 +53,6 @@
   --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Legacy aliases (mantém compatibilidade) */
-  --primary-color: var(--primary);
-  --secondary-color: var(--secondary);
-  --secondary-color-bright: var(--secondary-bright);
   --bg-card: var(--surface-1);
 }
 
@@ -64,7 +61,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --primary-color: var(--primary);
 }
 
 @layer base {
@@ -195,6 +191,11 @@
     color: var(--foreground-muted);
     letter-spacing: 0.2em;
   }
+
+  .cardStyle {
+    @apply rounded-2xl flex gap-3 transition-all duration-300 bg-[var(--bg-card)]
+      backdrop-blur-md border border-gray-800 hover:border-[var(--secondary-glow)] hover:shadow-[var(--primary)]
+  }
 }
 
 html {
@@ -206,7 +207,7 @@ body {
   color: var(--foreground);
   font-family: "Montserrat", sans-serif;
   scrollbar-width: thin;
-  scrollbar-color: var(--primary-color) black;
+  scrollbar-color: var(--primary) black;
   overflow: auto;
 }
 
@@ -219,7 +220,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 
@@ -232,7 +233,7 @@ body::-webkit-scrollbar-thumb {
   content: '';
   width: 0%;
   height: 3px;
-  background: var(--primary-color);
+  background: var(--primary);
   border-radius: 2rem;
   position: relative;
   bottom: -24px;
