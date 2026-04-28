@@ -7,10 +7,10 @@ import { motion } from "motion/react"
 
 const paragraphs = [
   "Sou desenvolvedor front-end em evolução para fullstack, com foco em Next.js e TypeScript, criando interfaces modernas, responsivas e orientadas à melhor experiência do usuário.",
-  "Desenvolvo aplicações com código limpo, soluções intuitivas e integração eficiente com APIs, garantindo organização, performance e compatibilidade com o back-end.",
-  "Atualmente, estou expandindo meus conhecimentos para o back-end, estudando Node.js, SQL e conceitos de APIs e autenticação.",
-  "Estou em constante aprendizado, ampliando meus conhecimentos em back-end e evoluindo como desenvolvedor.",
-]
+  "Desenvolvo aplicações com código limpo e interfaces seguindo padrões de Design System, garantindo organização, performance e integração eficiente com APIs.",
+  "Também atuo no desenvolvimento back-end com Node.js, criando APIs, implementando regras de negócio, autenticação e integração com banco de dados.",
+  "Estou em constante evolução como desenvolvedor fullstack, aprofundando meus conhecimentos e construindo projetos cada vez mais completos.",
+];
 
 export const AboutContent = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
@@ -35,7 +35,7 @@ export const AboutContent = () => {
           initial={{ opacity: 0, scale: 0.2, y: 40 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="flex flex-col gap-3 w-full"
+          className="flex flex-col w-full"
         >
           {paragraphs.map((text, index) => (
             <p key={index}
