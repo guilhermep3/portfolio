@@ -20,7 +20,7 @@
     "type": ["Website"]
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "AcervoDev",
     "description": "AcervoDev é um projeto que reune os principais sites para desenvolvedores, com o objetivo de facilitar o acesso a recursos e ferramentas essenciais para o desenvolvimento. O site apresenta uma interface moderna, rápida e responsiva",
     "technologies": ["React", "Vite", "Typescript", "Tailwind"],
@@ -30,7 +30,7 @@
     "type": ["Website"]
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Odontana",
     "description": "Odontana é um site desenvolvido para uma clínica odontológica. O projeto conta com um formulário de agendamento, animações utilizando ScrollReveal e foi construído com Next.js, oferecendo uma interface moderna, rápida e responsiva.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -40,7 +40,7 @@
     "type": ["Website"]
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Web Cinema",
     "description": "Web Cinema é um site que simula uma plataforma de cinema, exibindo filmes em destaque e em cartaz, além de contar com uma ferramenta de pesquisa. O projeto também possui um sistema simples de login utilizando React Hook Form e Zod para validação do formulário.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -50,7 +50,7 @@
     "type": ["Website"]
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Alvenar",
     "description": "Alvenar é um site desenvolvido para uma empresa de arquitetura, composto por três páginas principais. A homepage apresenta diversas seções com animações e um layout moderno, além de reunir informações sobre a empresa. A página da loja é funcional, permitindo navegação por produtos, adição ao carrinho e salvamento de dados utilizando Zustand. Já a página de contato possibilita o agendamento de reuniões, com validação de formulário implementada com React Hook Form e Zod.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -60,7 +60,7 @@
     "type": ["Website", "E-commerce"]
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "DevNutri",
     "description": "DevNutri é um projeto completo que combina uma landing page com funcionalidades de e-commerce. A aplicação possui múltiplas páginas e apresenta um design moderno, responsivo e otimizado para oferecer uma boa experiência ao usuário.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -70,7 +70,7 @@
     "type": ["Website", "E-commerce"]
   },
     {
-    "id": 7,
+    "id": 8,
     "name": "Nutrine",
     "description": "Nutrine é um site de receitas que consome a API TheMealDB para exibir uma variedade de receitas. O projeto apresenta um design moderno, responsivo e otimizado para oferecer uma boa experiência ao usuário, permitindo explorar diferentes opções de pratos e suas respectivas informações.",
     "technologies": ["React", "Vite", "CSS"],
@@ -80,7 +80,7 @@
     "type": ["E-commerce"]
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "LevelUP",
     "description": "LevelUP é uma landing page para uma academia, projetada para atrair clientes com informações sobre serviços, planos e contato. O projeto se destaca pelo design limpo, responsivo e por animações sutis.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -90,7 +90,7 @@
     "type": ["Website"]
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Clube do Sushi",
     "description": "Clube do Sushi é um site de restaurante com uma página inicial de apresentação e uma seção de pedidos. Desenvolvido utilizando a biblioteca ShadCN UI com React, oferece uma interface simples e funcional para o menu e simulação de pedidos online.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -100,7 +100,7 @@
     "type": ["E-commerce"]
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Afazeres",
     "description": "Afazeres é uma aplicação de lista de tarefas desenvolvida com React e Next.js, projetada para oferecer mais personalização e organização das tarefas diárias.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -110,7 +110,7 @@
     "type": ["Web-App"]
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Clone Chiquinho",
     "description": "Clone do site Chiquinho Sorvetes desenvolvido para praticar estilização com Sass. O projeto replica as principais páginas e animações utilizando a biblioteca AOS.",
     "technologies": ["HTML", "Sass", "Javascript"],
@@ -120,7 +120,7 @@
     "type": ["Website"]
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Juris Power",
     "description": "Juris Power é uma landing page desenvolvida para um escritório de advocacia. O projeto foi construído com Next.js e utiliza Styled Components para estilização, apresentando um design moderno, responsivo e bem organizado.",
     "technologies": ["Next.Js", "Typescript"],
@@ -130,7 +130,7 @@
     "type": ["Landing Page"]
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Clima Cidade",
     "description": "Clima Cidade é um projeto que consome a API OpenWeatherMap utilizando fetch e try/catch, permitindo visualizar informações climáticas de diferentes cidades. O projeto possui um design moderno, responsivo e um background dinâmico desenvolvido com JavaScript.",
     "technologies": ["HTML", "CSS", "Javascript"],
@@ -140,7 +140,7 @@
     "type": ["Web-App"]
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Corte Clássico",
     "description": "Corte Clássico é uma landing page para uma barbearia, focada em atrair clientes por meio de um design simples e objetivo. O projeto foi desenvolvido para praticar componentes, organização de pastas e estilização com CSS.",
     "technologies": ["Next.Js", "Typescript", "CSS"],
@@ -150,7 +150,7 @@
     "type": ["Landing Page"]
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Linkedin Profile",
     "description": "Linkedin Profile é um projeto que replica a página de perfil do LinkedIn, desenvolvido para praticar consumo de APIs e carregamento de dados. O projeto simula requisições de dados utilizando Axios e reproduz algumas funcionalidades da plataforma.",
     "technologies": ["Next.Js", "Typescript", "Axios"],

@@ -58,7 +58,7 @@ export const Modal = () => {
               >
                 Acessar projeto
               </Link>
-              <LinkIcon href="https://github.com/guilhermep3"
+              <LinkIcon href={modalProject?.github}
                 Icon={Github}
               />
             </div>
