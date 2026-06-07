@@ -11,22 +11,32 @@
   },
   {
     "id": 2,
-    "name": "Odontana",
-    "description": "Odontana é um site desenvolvido para uma clínica odontológica. O projeto conta com um formulário de agendamento, animações utilizando ScrollReveal e foi construído com Next.js, oferecendo uma interface moderna, rápida e responsiva.",
-    "technologies": ["Next.Js", "Typescript", "CSS"],
-    "image": "odontana.png",
-    "url": "https://odontana.vercel.app",
-    "github": "https://github.com/guilhermep3/dentista-website",
-    "type": ["Website"]
-  },
-  {
-    "id": 3,
     "name": "DogsInfos",
     "description": "DogsInfos é um site que apresenta informações sobre diferentes raças de cachorros. O projeto foi desenvolvido com Next.js, React.js, TypeScript e Tailwind no front-end, além de Node.js no back-end para a criação da API com deploy na Render. Atualmente, é possível visualizar mais de 30 raças, com opções de filtragem, ordenação e uma página dedicada para cada raça.",
     "technologies": ["Node.js", "Next.Js", "Typescript", "CSS"],
     "image": "dogsinfos.png",
     "url": "https://dogsinfos.vercel.app/",
-    "github": "https://github.com/guilhermep3/alvenar-website",
+    "github": "https://github.com/guilhermep3/dogsinfos",
+    "type": ["Website"]
+  },
+  {
+    "id": 2,
+    "name": "AcervoDev",
+    "description": "AcervoDev é um projeto que reune os principais sites para desenvolvedores, com o objetivo de facilitar o acesso a recursos e ferramentas essenciais para o desenvolvimento. O site apresenta uma interface moderna, rápida e responsiva",
+    "technologies": ["React", "Vite", "Typescript", "Tailwind"],
+    "image": "acervodev.png",
+    "url": "https://acervodev.vercel.app",
+    "github": "https://github.com/guilhermep3/acervodev",
+    "type": ["Website"]
+  },
+  {
+    "id": 3,
+    "name": "Odontana",
+    "description": "Odontana é um site desenvolvido para uma clínica odontológica. O projeto conta com um formulário de agendamento, animações utilizando ScrollReveal e foi construído com Next.js, oferecendo uma interface moderna, rápida e responsiva.",
+    "technologies": ["Next.Js", "Typescript", "CSS"],
+    "image": "odontana.png",
+    "url": "https://odontana.vercel.app",
+    "github": "https://github.com/guilhermep3/odontana",
     "type": ["Website"]
   },
   {
