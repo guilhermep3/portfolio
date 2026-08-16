@@ -64,8 +64,8 @@ export const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <Link href={'/curriculo-guilherme-pereira-dev.pdf'}
-              download={'curriculo-guilherme-pereira-dev'}
+            <Link href={'/curriculo-guilhermepereira-dev.pdf'}
+              download={'curriculo-guilhermepereira-dev'}
               className="buttonStyle boxShadowStyle"
             >
               Download CV
